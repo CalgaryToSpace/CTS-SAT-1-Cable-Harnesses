@@ -91,37 +91,37 @@ connectors:
 
 
 cables:
-  J4 → J10 VD3_OBC[0]:
+  J4 → J10 VD3_OBC[0] (Harness 1): 
     wirecount: 4
     length: 200 mm
     colors: [RD, PK, BK, BU]
-  J8 → J7 VD3_OBC[1]:
+  J8 → J7 VD3_OBC[1] (Harness 2):
     wirecount: 8
     length: 275 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
-  J9 → Nichrome Wire:
+  J9 → Nichrome Wire (Harness 3):
     wirecount: 6
     length: 275 mm
-  J3 → GPS:
+  J3 → GPS (Harness 7):
     wirecount: 8
-  J10 → MPI:
+  J10 → MPI (Harness 8):
     wirecount: 10
     length: 200 mm
-  J7 → Camera:
+  J7 → Camera (Harness 9):
     wirecount: 6
     length: 250 mm
-    colors: [RD, PK, BL, YE, BK, BU]
-  J13 → ANTS:
+    colors: [RD, PK, BK, YE, BK, BU]
+  J13 → ANTS (Harness 10):
     wirecount: 10
-    colors: [RD, BU, BK, YE, BK, RD, GN, OG, BK, BL]
-  J15 → COTS 2U Solar Panel:
+    colors: [RD, BU, BK, YE, BK, RD, GN, OG, BK, BK]
+  J15 → COTS 2U Solar Panel (Harness 14):
     wirecount: 4
-  J14 → EPS - J9:
+  J14 → EPS - J9 (Harness 15):
     wirecount: 4
     length: 100 mm
-  J12 → USB Serial Converter:
+  J12 → USB Serial Converter (Harness 51):
     wirecount: 8
-  J11 → ST-Link:
+  J11 → ST-Link (Harness 52):
     wirecount: 6
 
 
@@ -132,45 +132,45 @@ cables:
 connections:
   -
     - OBC - J4: [1-4]
-    - J4 → J10 VD3_OBC[0]: [1-4]
+    - J4 → J10 VD3_OBC[0] (Harness 1): [1-4]
     - EPS - J10 VD3_OBC[0]: [4-1]
   -
     - OBC - J8: [1-8]
-    - J8 → J7 VD3_OBC[1]: [1-8]
+    - J8 → J7 VD3_OBC[1] (Harness 2): [1-8]
     - EPS - J7 VD3_OBC[1]: [8-1]
   -
     - OBC - J9: [1-6]
-    - J9 → Nichrome Wire: [1-6]
+    - J9 → Nichrome Wire (Harness 3): [1-6]
     - Nichrome Wire: [1-6]
   -
     - OBC - J3: [3,4,7]
-    - J3 → GPS: [3,4,7]
+    - J3 → GPS (Harness 7): [3,4,7]
     - GPS: [3,4,7]
   -
     - OBC - J10: [1-9]
-    - J10 → MPI: [1-9]
+    - J10 → MPI (Harness 8): [1-9]
     - MPI: [1-9]
   -
     - OBC - J7: [1-6]
-    - J7 → Camera: [1-6]
+    - J7 → Camera (Harness 9): [1-6]
     - Camera: [1-6]
   -
     - OBC - J13: [1-9]
-    - J13 → ANTS: [1-9]
+    - J13 → ANTS (Harness 10): [1-9]
     - ANTS: [1-9]
   -
     - OBC - J15: [1-4]
-    - J15 → COTS 2U Solar Panel: [1-4]
+    - J15 → COTS 2U Solar Panel (Harness 14): [1-4]
     - COTS 2U Solar Panel: [1-4]
   -
     - OBC - J14: [1-4]
-    - J14 → EPS - J9: [1-4]
+    - J14 → EPS - J9 (Harness 15): [1-4]
     - EPS - J9: [1-4]
   -
     - OBC - J12: [1-8]
-    - J12 → USB Serial Converter: [1-8]
+    - J12 → USB Serial Converter (Harness 51): [1-8]
     - USB Serial Converter: [1-8]
   -
     - OBC - J11: [1-6]
-    - J11 → ST-Link: [1-6]
+    - J11 → ST-Link (Harness 52): [1-6]
     - ST-Link: [1-6]
