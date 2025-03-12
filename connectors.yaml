@@ -91,7 +91,7 @@ connectors:
 
 
 cables:
-  J4 → J10 VD3_OBC[0] (Harness 1): 
+  J4 → J10 VD3_OBC[0] (Harness 1):
     wirecount: 4
     length: 200 mm
     colors: [RD, PK, BK, BU]
