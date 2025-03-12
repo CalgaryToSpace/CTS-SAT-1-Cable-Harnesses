@@ -1,21 +1,29 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 10 wires	0	m	J13 → ANTS (Harness 10)
-2	Cable, 10 wires	200	mm	J10 → MPI (Harness 8)
-3	Cable, 4 wires	0	m	J15 → COTS 2U Solar Panel (Harness 14)
-4	Cable, 4 wires	300	mm	J14 → EPS - J9 (Harness 15), J4 → J10 VD3_OBC[0] (Harness 1)
-5	Cable, 6 wires	0	m	J11 → ST-Link (Harness 52)
-6	Cable, 6 wires	525	mm	J7 → Camera (Harness 9), J9 → Nichrome Wire (Harness 3)
-7	Cable, 8 wires	0	m	J12 → USB Serial Converter (Harness 51), J3 → GPS (Harness 7)
-8	Cable, 8 wires	275	mm	J8 → J7 VD3_OBC[1] (Harness 2)
-9	Connector, 8 pins	1		USB Serial Converter
-10	Connector, Headers, 2.54mm, 10 pins	1		MPI
-11	Connector, Headers, 2.54mm, 6 pins	1		ST-Link
-12	Connector, Micolock, 4-Wide, 4 pins	1		EPS - J10 VD3_OBC[0]
-13	Connector, Microlock, 15-Wide, 15 pins	1		EPS - J9
-14	Connector, Molex Picolock, 6-Wide, 6 pins	1		Nichrome Wire
-15	Connector, Molex Picolock, 8-Wide, 8 pins	2		EPS - J7 VD3_OBC[1], GPS
-16	Connector, Omnetics A28000-009, 9-Wide, 9 pins	1		ANTS
-17	Connector, Picoblade, 10-Wide, 10 pins	2		OBC - J10, OBC - J13
-18	Connector, Picoblade, 4-Wide, 4 pins	4		COTS 2U Solar Panel, OBC - J14, OBC - J15, OBC - J4
-19	Connector, Picoblade, 6-Wide, 6 pins	4		Camera, OBC - J11, OBC - J7, OBC - J9
-20	Connector, Picoblade, 8-Wide, 8 pins	3		OBC - J12, OBC - J3, OBC - J8
+1	Cable, 1 wires	0	m	J17 → J3 (Harness 12), J18 → J4 (Harness 11), J20 → J2 (Harness 12)
+2	Cable, 10 wires	0	m	J13 → ANTS (Harness 10)
+3	Cable, 10 wires	200	mm	J10 → MPI (Harness 8)
+4	Cable, 15 wires	0	m	J2 → EPS PBP (Harness 5)
+5	Cable, 4 wires	0	m	J15 → COTS 2U Solar Panel (Harness 14), PWR → J11/J303 (Harness 4)
+6	Cable, 4 wires	300	mm	J14 → EPS - J9 (Harness 15), J4 → J10 VD3_OBC[0] (Harness 1)
+7	Cable, 6 wires	0	m	J11 → ST-Link (Harness 52), Separation Switches → J8 (Harness 54), Separation Switches → J8 (Harness 6)
+8	Cable, 6 wires	525	mm	J7 → Camera (Harness 9), J9 → Nichrome Wire (Harness 3)
+9	Cable, 8 wires	0	m	J12 → USB Serial Converter (Harness 51), J3 → GPS (Harness 7), Solar Panel Connectors → Bench Supply (Harness 55)
+10	Cable, 8 wires	275	mm	J8 → J7 VD3_OBC[1] (Harness 2)
+11	Connector, 2 separate connectors, 15 pins	1		EPS PBP
+12	Connector, 4 pins	1		EPS - J11/J303
+13	Connector, 8 pins	2		Bench Supply, USB Serial Converter
+14	Connector, COTS Cable, 1 pins	6		AX100 - J4, Antenna RF - J2, Antenna RF - J3, OBC - J17, OBC - J18, OBC - J20
+15	Connector, Headers, 2.54mm, 10 pins	1		MPI
+16	Connector, Headers, 2.54mm, 6 pins	1		ST-Link
+17	Connector, Micolock, 4-Wide, 4 pins	1		EPS - J10 VD3_OBC[0]
+18	Connector, Microlock, 15-Wide, 15 pins	2		EPS - J9, EPS PIU - J2
+19	Connector, Microlock, 6-Wide, 6 pins	1		EPS - J8
+20	Connector, Molex Picolock, 6-Wide, 6 pins	1		Nichrome Wire
+21	Connector, Molex Picolock, 8-Wide, 8 pins	1		EPS - J7 VD3_OBC[1]
+22	Connector, Omnetics A28000-009, 9-Wide, 9 pins	1		ANTS
+23	Connector, Picoblade, 10-Wide, 10 pins	2		OBC - J10, OBC - J13
+24	Connector, Picoblade, 4-Wide, 4 pins	5		COTS 2U Solar Panel, COTS 2U Solar Panel - PWR, OBC - J14, OBC - J15, OBC - J4
+25	Connector, Picoblade, 6-Wide, 6 pins	4		Camera, OBC - J11, OBC - J7, OBC - J9
+26	Connector, Picoblade, 8-Wide, 8 pins	4		GPS, OBC - J12, OBC - J3, OBC - J8
+27	Connector, Picolock, 8 pins	1		EPS - Solar Panel Connectors
+28	Connector, Separation Switches, 6 pins	1		Separation Switches

@@ -1,93 +1,170 @@
 connectors:
+  
   OBC - J4:
     type: Picoblade
     subtype: 4-Wide
     pinlabels: [12V_MPI, 12V_MPI, GND, GND]
+  
   EPS - J10 VD3_OBC[0]:
     type: Micolock
     subtype: 4-Wide
     pinlabels: [GND, GND, VD3_OBC(0), VD3_OBC(0)]
+  
   OBC - J8:
     type: Picoblade
     subtype: 8-Wide
     pinlabels: [NC, GND, NC, GND, GND, GND, +12 BOOM, +12 BOOM]
+  
   EPS - J7 VD3_OBC[1]:
     type: Molex Picolock
     subtype: 8-Wide
     pinlabels: [VD3_OBC(1), VD3_OBC(1), GND, GND, GND, I2C SCL, GND, I2C SDA]
+  
   OBC - J9:
     type: Picoblade
     subtype: 6-Wide
     pinlabels: [BURN NEG, BURN NEG, BURN NEG, BURN POS, BURN POS, BURN POS]
+  
   Nichrome Wire:
     type: Molex Picolock
     subtype: 6-Wide
     pincount: 6
+  
   OBC - J3:
     type: Picoblade
     subtype: 8-Wide
     pinlabels: [NC, NC, MOSI_USART3_TX, MOSI_USART3_RX, NC, NC, GPS_PPS, NC]
+  
   GPS:
-    type: Molex Picolock
+    type: Picoblade
     subtype: 8-Wide
     pincount: 8
+  
   OBC - J10:
     type: Picoblade
     subtype: 10-Wide
     pinlabels: [12_MPI, 12_MPI, GND, 5V0_MPI, GND, MOSI_MPI_TX_P, MOSI_MPI_TX_N, MISO_MPI_TX_P, MISO_MPI_TX_N, NC]
+  
   MPI:
     type: Headers
     subtype: 2.54mm
     pincount: 10
+  
   OBC - J7:
     type: Picoblade
     subtype: 6-Wide
     pinlabels: [3V3_CAM, CAM_EN, MOSI_UART4_TX, MISO_UART4_RX, NC, NC]
+  
   Camera:
     type: Picoblade
     subtype: 6-Wide
     pinlabels: [VDD, "ON", RXD, TXD, FLASH, GND]
+  
   OBC - J13:
     type: Picoblade
     subtype: 10-Wide
     pinlabels: [3V3_ANT_DEPLOY, 12C2_SDA, GND, 12C3_SDA, GND, 3V3_ANT_DEPLOY, 12C2_SCL, 12C3_SCL, GND, NC]
+  
   ANTS:
     type: Omnetics A28000-009
     subtype: 9-Wide
     pinlabels: [VCC, SDA_A, GND, SDA_B, GND, VCC, SCL_A, SCL_B, GND]
+  
   OBC - J15:
     type: Picoblade
     subtype: 4-Wide
     pinlabels: [3V3, GND, RBF_1, RBF_2]
+  
+  COTS 2U Solar Panel - PWR:
+    type: Picoblade
+    subtype: 4-Wide
+    pincount: 4
+
   COTS 2U Solar Panel:
     type: Picoblade
     subtype: 4-Wide
     pincount: 4
+
+
   OBC - J14:
     type: Picoblade
     subtype: 4-Wide
     pinlabels: [MISO_UART5_RX, MOSI_UART5_TX, GND, GND]
+  
   EPS - J9:
     type: Microlock
     subtype: 15-Wide
     pinlabels: [RAIL_PWR, RAIL_PWR, RAIL_PWR, RAIL_PWR, GND, GND, GND, GND, UART_RX_H2_21, UART_TX_H2_22, I2C_EXT_SCL, I2C_EXT_SDA, GND, UART_TX_3V3_OUT1, UART_RX_3V3_IN1]
+  
   OBC - J12:
     type: Picoblade
     subtype: 8-Wide
     pinlabels: [GND, MISO_LPUART1_RX, MOSI_LPUART_TX, I2C1_SCL, I2C_SDA, 3V3, 5V, GND]
+  
   USB Serial Converter:
     pincount: 8
+  
   OBC - J11:
     type: Picoblade
     subtype: 6-Wide
     pinlabels: [3V3, SWCLK, GND, SWDIO, NRST, SWO]
+  
   ST-Link:
     type: Headers
     subtype: 2.54mm
     pincount: 6
   
-     
+  EPS PIU - J2:
+    type: Microlock
+    subtype: 15-Wide
+    pincount: 15
+  
+  EPS PBP:
+    subtype: 2 separate connectors
+    pincount: 15
+  
+  Separation Switches:
+    subtype: Separation Switches
+    pincount: 6
+  
+  EPS - J8:
+    type: Microlock
+    subtype: 6-Wide
+    pincount: 6
 
+  OBC - J18:
+    type: COTS Cable
+    pincount: 1
+
+  AX100 - J4:
+    type: COTS Cable
+    pincount: 1
+
+  OBC - J17:
+    type: COTS Cable
+    pincount: 1
+  
+  OBC - J20:
+    type: COTS Cable
+    pincount: 1
+
+  Antenna RF - J3:
+    type: COTS Cable
+    pincount: 1
+
+  Antenna RF - J2:
+    type: COTS Cable
+    pincount: 1
+
+  EPS - Solar Panel Connectors:
+    type: Picolock
+    pincount: 8
+
+  Bench Supply:
+    pincount: 8
+
+  EPS - J11/J303:
+    pincount: 4
 
 
 cables:
@@ -95,38 +172,68 @@ cables:
     wirecount: 4
     length: 200 mm
     colors: [RD, PK, BK, BU]
+  
   J8 → J7 VD3_OBC[1] (Harness 2):
     wirecount: 8
     length: 275 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
+  
   J9 → Nichrome Wire (Harness 3):
     wirecount: 6
     length: 275 mm
+  
+  PWR → J11/J303 (Harness 4):
+    wirecount: 4
+
+  J2 → EPS PBP (Harness 5):
+    wirecount: 15
+
+  Separation Switches → J8 (Harness 6):
+    wirecount: 6
+  
   J3 → GPS (Harness 7):
     wirecount: 8
+  
   J10 → MPI (Harness 8):
     wirecount: 10
     length: 200 mm
+  
   J7 → Camera (Harness 9):
     wirecount: 6
     length: 250 mm
     colors: [RD, PK, BK, YE, BK, BU]
+  
   J13 → ANTS (Harness 10):
     wirecount: 10
     colors: [RD, BU, BK, YE, BK, RD, GN, OG, BK, BK]
+  
+  J18 → J4 (Harness 11):
+    wirecount: 1
+
+  J17 → J3 (Harness 12):
+    wirecount: 1
+
+  J20 → J2 (Harness 12):
+    wirecount: 1
+
   J15 → COTS 2U Solar Panel (Harness 14):
     wirecount: 4
+  
   J14 → EPS - J9 (Harness 15):
     wirecount: 4
     length: 100 mm
+  
   J12 → USB Serial Converter (Harness 51):
     wirecount: 8
+  
   J11 → ST-Link (Harness 52):
     wirecount: 6
 
+  Separation Switches → J8 (Harness 54):
+    wirecount: 6
 
-
-
+  Solar Panel Connectors → Bench Supply (Harness 55):
+      wirecount: 8
 
 
 connections:
@@ -142,6 +249,18 @@ connections:
     - OBC - J9: [1-6]
     - J9 → Nichrome Wire (Harness 3): [1-6]
     - Nichrome Wire: [1-6]
+  -
+    - COTS 2U Solar Panel - PWR: [1-4]
+    - PWR → J11/J303 (Harness 4): [1-4]
+    - EPS - J11/J303: [1-4]
+  -
+    - EPS PIU - J2: [1-15]
+    - J2 → EPS PBP (Harness 5): [1-15]
+    - EPS PBP: [1-15]
+  -
+    - Separation Switches: [1-6]
+    - Separation Switches → J8 (Harness 6): [1-6]
+    - EPS - J8: [1-6]
   -
     - OBC - J3: [3,4,7]
     - J3 → GPS (Harness 7): [3,4,7]
@@ -159,6 +278,18 @@ connections:
     - J13 → ANTS (Harness 10): [1-9]
     - ANTS: [1-9]
   -
+    - OBC - J18: [1]
+    - J18 → J4 (Harness 11): [1]
+    - AX100 - J4: [1]
+  -
+    - OBC - J17: [1]
+    - J17 → J3 (Harness 12): [1]
+    - Antenna RF - J3: [1]
+  -
+    - OBC - J20: [1]
+    - J20 → J2 (Harness 12): [1]
+    - Antenna RF - J2: [1]  
+  -
     - OBC - J15: [1-4]
     - J15 → COTS 2U Solar Panel (Harness 14): [1-4]
     - COTS 2U Solar Panel: [1-4]
@@ -174,3 +305,11 @@ connections:
     - OBC - J11: [1-6]
     - J11 → ST-Link (Harness 52): [1-6]
     - ST-Link: [1-6]
+  -
+    - Separation Switches: [1-6]
+    - Separation Switches → J8 (Harness 54): [1-6]
+    - EPS - J8: [1-6]
+  - 
+    - EPS - Solar Panel Connectors: [1-8]
+    - Solar Panel Connectors → Bench Supply (Harness 55): [1-8]
+    - Bench Supply: [1-8]
