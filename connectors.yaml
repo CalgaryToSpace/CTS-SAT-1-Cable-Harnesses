@@ -8,7 +8,7 @@ connectors:
   EPS - J10 VD3_OBC[0]:
     type: Micolock
     subtype: 4-Wide
-    pinlabels: [GND, GND, VD3_OBC(0), VD3_OBC(0)]
+    pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
   
   OBC - J8:
     type: Picoblade
@@ -84,7 +84,6 @@ connectors:
     type: Picoblade
     subtype: 4-Wide
     pincount: 4
-
 
   OBC - J14:
     type: Picoblade
@@ -222,6 +221,7 @@ cables:
   J14 → EPS - J9 (Harness 15):
     wirecount: 4
     length: 100 mm
+    colors: [RD, PK, BK, YE]
   
   J12 → USB Serial Converter (Harness 51):
     wirecount: 8
@@ -240,7 +240,7 @@ connections:
   -
     - OBC - J4: [1-4]
     - J4 → J10 VD3_OBC[0] (Harness 1): [1-4]
-    - EPS - J10 VD3_OBC[0]: [4-1]
+    - EPS - J10 VD3_OBC[0]: [1-4]
   -
     - OBC - J8: [1-8]
     - J8 → J7 VD3_OBC[1] (Harness 2): [1-8]
@@ -296,7 +296,7 @@ connections:
   -
     - OBC - J14: [1-4]
     - J14 → EPS - J9 (Harness 15): [1-4]
-    - EPS - J9: [1-4]
+    - EPS - J9: [14, 15, 5, 6]
   -
     - OBC - J12: [1-8]
     - J12 → USB Serial Converter (Harness 51): [1-8]
