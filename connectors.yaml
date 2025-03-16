@@ -45,15 +45,15 @@ connectors:
     pinlabels: [3V3, GND, RBF_1, RBF_2]
 
   OBC - J17:
-    type: COTS Cable
+    type: 50 Ohm MCX
     pincount: 1
 
   OBC - J18:
-    type: COTS Cable
+    type: 50 Ohm MCX (edge mounting)
     pincount: 1
   
   OBC - J20:
-    type: COTS Cable
+    type: 50 Ohm MCX
     pincount: 1
   
   EPS PIU - J2:
@@ -61,7 +61,7 @@ connectors:
     pincount: 15
 
   EPS - J7 VD3_OBC[1]:
-    type: Molex Picolock
+    type: Picolock
     pins: [8, 7, 6, 5, 4, 3, 2, 1]
     pinlabels: [I2C SDA, GND, I2C SCL, GND, GND, GND, VD3_OBC(1), VD3_OBC(1)]
 
@@ -78,10 +78,11 @@ connectors:
     pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
 
   EPS - J11/J303:
+    type: Picolock
     pincount: 4
   
   EPS PBP:
-    subtype: 2 separate connectors
+    type: N/A
     pincount: 15
 
   EPS - Solar Panel Connectors:
@@ -89,7 +90,7 @@ connectors:
     pincount: 8
   
   Nichrome Wire:
-    type: Molex Picolock
+    type: Picolock
     pincount: 6
   
   GPS:
@@ -117,6 +118,7 @@ connectors:
     pincount: 4
   
   USB Serial Converter:
+    type: N/A
     pincount: 8
   
   ST-Link:
@@ -124,107 +126,112 @@ connectors:
     pincount: 6
   
   Ground Separation Switches:
+    type: N/A
     pincount: 6
 
   Flight Separation Switches:
+    type: N/A
     pincount: 4
   
   AX100 - J4:
-    type: COTS Cable
+    type: 50 ohm MCX
     pincount: 1
 
   Antenna RF - J3:
-    type: COTS Cable
+    type: MMCX Female
     pincount: 1
 
   Antenna RF - J2:
-    type: COTS Cable
+    type: MMCX Female
     pincount: 1
 
   Bench Supply:
+    type: N/A
     pincount: 8
 
 cables:
-  J4 → J10 VD3_OBC[0] (Harness 1):
+  Harness 1 - MPI 12V Power:
     wirecount: 4
     length: 200 mm
     colors: [VT, BK, OG, YE]
   
-  J8 → J7 VD3_OBC[1] (Harness 2):
+  Harness 2 - Boom Power:
     wirecount: 8
     length: 150 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
   
-  J9 → Nichrome Wire (Harness 3):
+  Harness 3 - Boom Burn Wire:
     wirecount: 6
     colors: [VT, BK, OG, YE, GN, BU]
   
-  PWR → J11/J303 (Harness 4):
+  Harness 4 - COTS 2U Solar Panel Power to EPS:
     wirecount: 4
     colors: [VT, BK, OG, YE]
 
-  J2 → EPS PBP (Harness 5):
+  Harness 5 - EPS Battery:
     wirecount: 15
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD, BU, BG, SR, IV, OL]
 
-  Separation Switches → J8 (Harness 6):
+  Harness 6 - EPS Separation Switch Cable:
     wirecount: 4
     length: 250 mm
     colors: [VT, BK, OG, YE]
   
-  J3 → GPS (Harness 7):
+  Harness 7 - GPS Connector:
     wirecount: 8
     length: 180 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
   
-  J10 → MPI (Harness 8):
+  Harness 8 - MPI Connector:
     wirecount: 10
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
   
-  J7 → Camera (Harness 9):
+  Harness 9 - Camera Connector:
     wirecount: 6
     length: 250 mm
     colors: [VT, BK, OG, YE, GN, BU]
   
-  J13 → ANTS (Harness 10):
+  Harness 10 - Antenna Deployment Connector:
     wirecount: 10
     length: 250 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
   
-  J18 → J4 (Harness 11):
+  Harness 11 - RF Cable from AX100 to OBC:
     wirecount: 1
     length: 110 mm
     colors: [VT]
+    shield: true
 
-  J17 → J3 (Harness 12):
+  Harness 12A - RF Cable from OBC to Antennas:
+    wirecount: 1
+    colors: [VT]
+    shield: true
+
+  Harness 12B - RF Cable from OBC to Antennas:
     wirecount: 1
     colors: [VT]
 
-  J20 → J2 (Harness 12):
-    wirecount: 1
-    colors: [VT]
-
-  J15 → COTS 2U Solar Panel (Harness 14):
+  Harness 14 - Solar Panel RBF Cable:
     wirecount: 4
     colors: [VT, BK, OG, YE]
   
-  J14 → EPS - J9 (Harness 15):
+  Harness 15 - EPS UART to OBC:
     wirecount: 4
     colors: [VT, BK, OG, YE]
   
-  J12 → USB Serial Converter (Harness 51):
+  Harness 51 - Umbillical Connector:
     wirecount: 8
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
   
-  J11 → ST-Link (Harness 52):
+  Harness 52 - Programmer Connector:
     wirecount: 6
     colors: [VT, BK, OG, YE, GN, BU]
 
-  Separation Switches → J8 (Harness 54):
+  Harness 54 - EPS Separation Switch Cable:
     wirecount: 6
     colors: [VT, BK, OG, YE]
 
-  Solar Panel Connectors → Bench Supply (Harness 55):
+  Harness 55 - EPS Solar Panel Charging Cable with 10 Ohm Resistor:
     wirecount: 8
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
 
@@ -232,77 +239,77 @@ cables:
 connections:
   -
     - OBC - J4: [1-4]
-    - J4 → J10 VD3_OBC[0] (Harness 1): [1-4]
+    - Harness 1 - MPI 12V Power: [1-4]
     - EPS - J10 VD3_OBC[0]: [1-4]
   -
     - OBC - J8: [1-8]
-    - J8 → J7 VD3_OBC[1] (Harness 2): [1-8]
+    - Harness 2 - Boom Power: [1-8]
     - EPS - J7 VD3_OBC[1]: [8-1]
   -
     - OBC - J9: [1-6]
-    - J9 → Nichrome Wire (Harness 3): [1-6]
+    - Harness 3 - Boom Burn Wire: [1-6]
     - Nichrome Wire: [1-6]
   -
     - COTS 2U Solar Panel - PWR: [1-4]
-    - PWR → J11/J303 (Harness 4): [1-4]
+    - Harness 4 - COTS 2U Solar Panel Power to EPS: [1-4]
     - EPS - J11/J303: [1-4]
   -
     - EPS PIU - J2: [1-15]
-    - J2 → EPS PBP (Harness 5): [1-15]
+    - Harness 5 - EPS Battery: [1-15]
     - EPS PBP: [1-15]
   -
     - Flight Separation Switches: [1-4]
-    - Separation Switches → J8 (Harness 6): [1-4]
+    - Harness 6 - EPS Separation Switch Cable: [1-4]
     - EPS - J8: [1-4]
   -
     - OBC - J3: [3,4,7]
-    - J3 → GPS (Harness 7): [3,4,7]
+    - Harness 7 - GPS Connector: [3,4,7]
     - GPS: [3,4,7]
   -
     - OBC - J10: [1-9]
-    - J10 → MPI (Harness 8): [1-9]
+    - Harness 8 - MPI Connector: [1-9]
     - MPI: [1-9]
   -
     - OBC - J7: [1-6]
-    - J7 → Camera (Harness 9): [1-6]
+    - Harness 9 - Camera Connector: [1-6]
     - Camera: [1-6]
   -
     - OBC - J13: [1-9]
-    - J13 → ANTS (Harness 10): [1-9]
+    - Harness 10 - Antenna Deployment Connector: [1-9]
     - ANTS: [1-9]
   -
     - OBC - J18: [1]
-    - J18 → J4 (Harness 11): [1]
+    - Harness 11 - RF Cable from AX100 to OBC: [1]
     - AX100 - J4: [1]
   -
     - OBC - J17: [1]
-    - J17 → J3 (Harness 12): [1]
+    - Harness 12A - RF Cable from OBC to Antennas: [1]
     - Antenna RF - J3: [1]
   -
     - OBC - J20: [1]
-    - J20 → J2 (Harness 12): [1]
+    - Harness 12B - RF Cable from OBC to Antennas: [1]
     - Antenna RF - J2: [1]  
   -
     - OBC - J15: [1-4]
-    - J15 → COTS 2U Solar Panel (Harness 14): [1-4]
+    - Harness 14 - Solar Panel RBF Cable: [1-4]
     - COTS 2U Solar Panel: [1-4]
   -
     - OBC - J14: [1-4]
-    - J14 → EPS - J9 (Harness 15): [1-4]
+    - Harness 15 - EPS UART to OBC: [1-4]
     - EPS - J9: [14, 15, 5, 6]
   -
     - OBC - J12: [1-8]
-    - J12 → USB Serial Converter (Harness 51): [1-8]
+    - Harness 51 - Umbillical Connector: [1-8]
     - USB Serial Converter: [1-8]
   -
     - OBC - J11: [1-6]
-    - J11 → ST-Link (Harness 52): [1-6]
+    - Harness 52 - Programmer Connector: [1-6]
     - ST-Link: [1-6]
   -
     - Ground Separation Switches: [1-6]
-    - Separation Switches → J8 (Harness 54): [1-6]
+    - Harness 54 - EPS Separation Switch Cable: [1-6]
     - EPS - J8: [1-6]
   - 
     - EPS - Solar Panel Connectors: [1-8]
-    - Solar Panel Connectors → Bench Supply (Harness 55): [1-8]
+    - Harness 55 - EPS Solar Panel Charging Cable with 10 Ohm Resistor: [1-8]
     - Bench Supply: [1-8]

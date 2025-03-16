@@ -1,30 +1,34 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, 1 wires	0	m	J17 → J3 (Harness 12), J20 → J2 (Harness 12)
-2	Cable, 1 wires	110	mm	J18 → J4 (Harness 11)
-3	Cable, 10 wires	0	m	J10 → MPI (Harness 8)
-4	Cable, 10 wires	250	mm	J13 → ANTS (Harness 10)
-5	Cable, 15 wires	0	m	J2 → EPS PBP (Harness 5)
-6	Cable, 4 wires	0	m	J14 → EPS - J9 (Harness 15), J15 → COTS 2U Solar Panel (Harness 14), PWR → J11/J303 (Harness 4)
-7	Cable, 4 wires	450	mm	J4 → J10 VD3_OBC[0] (Harness 1), Separation Switches → J8 (Harness 6)
-8	Cable, 6 wires	0	m	J11 → ST-Link (Harness 52), J9 → Nichrome Wire (Harness 3), Separation Switches → J8 (Harness 54)
-9	Cable, 6 wires	250	mm	J7 → Camera (Harness 9)
-10	Cable, 8 wires	0	m	J12 → USB Serial Converter (Harness 51), Solar Panel Connectors → Bench Supply (Harness 55)
-11	Cable, 8 wires	330	mm	J3 → GPS (Harness 7), J8 → J7 VD3_OBC[1] (Harness 2)
-12	Connector, 2 separate connectors, 15 pins	1		EPS PBP
+1	Cable, 1 wires	0	m	Harness 12B - RF Cable from OBC to Antennas
+2	Cable, 1 wires shielded	0	m	Harness 12A - RF Cable from OBC to Antennas
+3	Cable, 1 wires shielded	110	mm	Harness 11 - RF Cable from AX100 to OBC
+4	Cable, 10 wires	0	m	Harness 8 - MPI Connector
+5	Cable, 10 wires	250	mm	Harness 10 - Antenna Deployment Connector
+6	Cable, 15 wires	0	m	Harness 5 - EPS Battery
+7	Cable, 4 wires	0	m	Harness 14 - Solar Panel RBF Cable, Harness 15 - EPS UART to OBC, Harness 4 - COTS 2U Solar Panel Power to EPS
+8	Cable, 4 wires	450	mm	Harness 1 - MPI 12V Power, Harness 6 - EPS Separation Switch Cable
+9	Cable, 6 wires	0	m	Harness 3 - Boom Burn Wire, Harness 52 - Programmer Connector, Harness 54 - EPS Separation Switch Cable
+10	Cable, 6 wires	250	mm	Harness 9 - Camera Connector
+11	Cable, 8 wires	0	m	Harness 51 - Umbillical Connector, Harness 55 - EPS Solar Panel Charging Cable with 10 Ohm Resistor
+12	Cable, 8 wires	330	mm	Harness 2 - Boom Power, Harness 7 - GPS Connector
 13	Connector, 2.54mm Header, 10 pins	1		MPI
 14	Connector, 2.54mm Header, 6 pins	1		ST-Link
-15	Connector, 4 pins	2		EPS - J11/J303, Flight Separation Switches
-16	Connector, 6 pins	1		Ground Separation Switches
-17	Connector, 8 pins	2		Bench Supply, USB Serial Converter
-18	Connector, COTS Cable, 1 pins	6		AX100 - J4, Antenna RF - J2, Antenna RF - J3, OBC - J17, OBC - J18, OBC - J20
+15	Connector, 50 Ohm MCX (edge mounting), 1 pins	1		OBC - J18
+16	Connector, 50 Ohm MCX, 1 pins	2		OBC - J17, OBC - J20
+17	Connector, 50 ohm MCX, 1 pins	1		AX100 - J4
+18	Connector, MMCX Female, 1 pins	2		Antenna RF - J2, Antenna RF - J3
 19	Connector, Microlock, 15 pins	2		EPS - J9, EPS PIU - J2
 20	Connector, Microlock, 4 pins	1		EPS - J10 VD3_OBC[0]
 21	Connector, Microlock, 6 pins	1		EPS - J8
-22	Connector, Molex Picolock, 6 pins	1		Nichrome Wire
-23	Connector, Molex Picolock, 8 pins	1		EPS - J7 VD3_OBC[1]
-24	Connector, Omnetics A28000-009, 9 pins	1		ANTS
-25	Connector, Picoblade, 10 pins	2		OBC - J10, OBC - J13
-26	Connector, Picoblade, 4 pins	5		COTS 2U Solar Panel, COTS 2U Solar Panel - PWR, OBC - J14, OBC - J15, OBC - J4
-27	Connector, Picoblade, 6 pins	4		Camera, OBC - J11, OBC - J7, OBC - J9
-28	Connector, Picoblade, 8 pins	4		GPS, OBC - J12, OBC - J3, OBC - J8
-29	Connector, Picolock, 8 pins	1		EPS - Solar Panel Connectors
+22	Connector, N/A, 15 pins	1		EPS PBP
+23	Connector, N/A, 4 pins	1		Flight Separation Switches
+24	Connector, N/A, 6 pins	1		Ground Separation Switches
+25	Connector, N/A, 8 pins	2		Bench Supply, USB Serial Converter
+26	Connector, Omnetics A28000-009, 9 pins	1		ANTS
+27	Connector, Picoblade, 10 pins	2		OBC - J10, OBC - J13
+28	Connector, Picoblade, 4 pins	5		COTS 2U Solar Panel, COTS 2U Solar Panel - PWR, OBC - J14, OBC - J15, OBC - J4
+29	Connector, Picoblade, 6 pins	4		Camera, OBC - J11, OBC - J7, OBC - J9
+30	Connector, Picoblade, 8 pins	4		GPS, OBC - J12, OBC - J3, OBC - J8
+31	Connector, Picolock, 4 pins	1		EPS - J11/J303
+32	Connector, Picolock, 6 pins	1		Nichrome Wire
+33	Connector, Picolock, 8 pins	2		EPS - J7 VD3_OBC[1], EPS - Solar Panel Connectors
