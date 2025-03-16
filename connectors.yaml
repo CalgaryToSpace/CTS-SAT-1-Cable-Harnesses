@@ -89,7 +89,7 @@ connectors:
     pinlabels: [RAIL_PWR, RAIL_PWR, RAIL_PWR, RAIL_PWR, GND, GND, GND, GND, UART_RX_H2_21, UART_TX_H2_22, I2C_EXT_SCL, I2C_EXT_SDA, GND, UART_TX_3V3_OUT1, UART_RX_3V3_IN1]
 
   EPS - J10 VD3_OBC[0]:
-    type: Micolock
+    type: Microlock
     subtype: 4-Wide
     pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
 
@@ -115,8 +115,8 @@ connectors:
     pincount: 8
 
   MPI:
-    type: Headers
-    subtype: 2.54mm
+    type: 2.54mm Header
+    type: 10-Wide
     pincount: 10
   
   Camera:
@@ -143,13 +143,15 @@ connectors:
     pincount: 8
   
   ST-Link:
-    type: Headers
-    subtype: 2.54mm
+    type: 2.54mm Header
+    subtype: 6-Wide
     pincount: 6
   
-  Separation Switches:
-    subtype: Separation Switches
+  Ground Separation Switches:
     pincount: 6
+
+  Flight Separation Switches:
+    pincount: 4
   
   AX100 - J4:
     type: COTS Cable
@@ -191,7 +193,8 @@ cables:
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD, BU, BG, SR, IV, OL]
 
   Separation Switches → J8 (Harness 6):
-    wirecount: 6
+    wirecount: 4
+    colors: [VT, BK, OG, YE]
   
   J3 → GPS (Harness 7):
     wirecount: 8
@@ -242,6 +245,7 @@ cables:
 
   Separation Switches → J8 (Harness 54):
     wirecount: 6
+    colors: [VT, BK, OG, YE]
 
   Solar Panel Connectors → Bench Supply (Harness 55):
     wirecount: 8
@@ -270,9 +274,9 @@ connections:
     - J2 → EPS PBP (Harness 5): [1-15]
     - EPS PBP: [1-15]
   -
-    - Separation Switches: [1-6]
-    - Separation Switches → J8 (Harness 6): [1-6]
-    - EPS - J8: [1-6]
+    - Flight Separation Switches: [1-4]
+    - Separation Switches → J8 (Harness 6): [1-4]
+    - EPS - J8: [1-4]
   -
     - OBC - J3: [3,4,7]
     - J3 → GPS (Harness 7): [3,4,7]
@@ -318,7 +322,7 @@ connections:
     - J11 → ST-Link (Harness 52): [1-6]
     - ST-Link: [1-6]
   -
-    - Separation Switches: [1-6]
+    - Ground Separation Switches: [1-6]
     - Separation Switches → J8 (Harness 54): [1-6]
     - EPS - J8: [1-6]
   - 
