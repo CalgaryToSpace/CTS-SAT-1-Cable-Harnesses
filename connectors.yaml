@@ -2,57 +2,46 @@ connectors:
   
   OBC - J3:
     type: Picoblade
-    subtype: 8-Wide
     pinlabels: [NC, NC, MOSI_USART3_TX, MOSI_USART3_RX, NC, NC, GPS_PPS, NC]
 
   OBC - J4:
     type: Picoblade
-    subtype: 4-Wide
     pinlabels: [12V_MPI, 12V_MPI, GND, GND]
 
   OBC - J8:
     type: Picoblade
-    subtype: 8-Wide
     pinlabels: [NC, GND, NC, GND, GND, GND, +12 BOOM, +12 BOOM]
 
   OBC - J7:
     type: Picoblade
-    subtype: 6-Wide
     pinlabels: [3V3_CAM, CAM_EN, MOSI_UART4_TX, MISO_UART4_RX, NC, NC]
 
   OBC - J9:
     type: Picoblade
-    subtype: 6-Wide
     pinlabels: [BURN NEG, BURN NEG, BURN NEG, BURN POS, BURN POS, BURN POS]
 
   OBC - J10:
     type: Picoblade
-    subtype: 10-Wide
     pinlabels: [12_MPI, 12_MPI, GND, 5V0_MPI, GND, MOSI_MPI_TX_P, MOSI_MPI_TX_N, MISO_MPI_TX_P, MISO_MPI_TX_N, NC]
   
   OBC - J11:
     type: Picoblade
-    subtype: 6-Wide
     pinlabels: [3V3, SWCLK, GND, SWDIO, NRST, SWO]
 
   OBC - J12:
     type: Picoblade
-    subtype: 8-Wide
     pinlabels: [GND, MISO_LPUART1_RX, MOSI_LPUART_TX, I2C1_SCL, I2C_SDA, 3V3, 5V, GND]
 
   OBC - J13:
     type: Picoblade
-    subtype: 10-Wide
     pinlabels: [3V3_ANT_DEPLOY, 12C2_SDA, GND, 12C3_SDA, GND, 3V3_ANT_DEPLOY, 12C2_SCL, 12C3_SCL, GND, NC]
 
   OBC - J14:
     type: Picoblade
-    subtype: 4-Wide
     pinlabels: [MISO_UART5_RX, MOSI_UART5_TX, GND, GND]
 
   OBC - J15:
     type: Picoblade
-    subtype: 4-Wide
     pinlabels: [3V3, GND, RBF_1, RBF_2]
 
   OBC - J17:
@@ -69,28 +58,23 @@ connectors:
   
   EPS PIU - J2:
     type: Microlock
-    subtype: 15-Wide
     pincount: 15
 
   EPS - J7 VD3_OBC[1]:
     type: Molex Picolock
-    subtype: 8-Wide
     pins: [8, 7, 6, 5, 4, 3, 2, 1]
     pinlabels: [I2C SDA, GND, I2C SCL, GND, GND, GND, VD3_OBC(1), VD3_OBC(1)]
 
   EPS - J8:
     type: Microlock
-    subtype: 6-Wide
     pincount: 6
 
   EPS - J9:
     type: Microlock
-    subtype: 15-Wide
     pinlabels: [RAIL_PWR, RAIL_PWR, RAIL_PWR, RAIL_PWR, GND, GND, GND, GND, UART_RX_H2_21, UART_TX_H2_22, I2C_EXT_SCL, I2C_EXT_SDA, GND, UART_TX_3V3_OUT1, UART_RX_3V3_IN1]
 
   EPS - J10 VD3_OBC[0]:
     type: Microlock
-    subtype: 4-Wide
     pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
 
   EPS - J11/J303:
@@ -106,37 +90,30 @@ connectors:
   
   Nichrome Wire:
     type: Molex Picolock
-    subtype: 6-Wide
     pincount: 6
   
   GPS:
     type: Picoblade
-    subtype: 8-Wide
     pincount: 8
 
   MPI:
     type: 2.54mm Header
-    type: 10-Wide
     pincount: 10
   
   Camera:
     type: Picoblade
-    subtype: 6-Wide
     pinlabels: [VDD, "ON", RXD, TXD, FLASH, GND]
   
   ANTS:
     type: Omnetics A28000-009
-    subtype: 9-Wide
     pinlabels: [VCC, SDA_A, GND, SDA_B, GND, VCC, SCL_A, SCL_B, GND]
   
   COTS 2U Solar Panel - PWR:
     type: Picoblade
-    subtype: 4-Wide
     pincount: 4
 
   COTS 2U Solar Panel:
     type: Picoblade
-    subtype: 4-Wide
     pincount: 4
   
   USB Serial Converter:
@@ -144,7 +121,6 @@ connectors:
   
   ST-Link:
     type: 2.54mm Header
-    subtype: 6-Wide
     pincount: 6
   
   Ground Separation Switches:
@@ -176,12 +152,11 @@ cables:
   
   J8 → J7 VD3_OBC[1] (Harness 2):
     wirecount: 8
-    length: 275 mm
+    length: 150 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
   
   J9 → Nichrome Wire (Harness 3):
     wirecount: 6
-    length: 275 mm
     colors: [VT, BK, OG, YE, GN, BU]
   
   PWR → J11/J303 (Harness 4):
@@ -194,15 +169,16 @@ cables:
 
   Separation Switches → J8 (Harness 6):
     wirecount: 4
+    length: 250 mm
     colors: [VT, BK, OG, YE]
   
   J3 → GPS (Harness 7):
     wirecount: 8
+    length: 180 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK]
   
   J10 → MPI (Harness 8):
     wirecount: 10
-    length: 200 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
   
   J7 → Camera (Harness 9):
@@ -212,10 +188,12 @@ cables:
   
   J13 → ANTS (Harness 10):
     wirecount: 10
+    length: 250 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
   
   J18 → J4 (Harness 11):
     wirecount: 1
+    length: 110 mm
     colors: [VT]
 
   J17 → J3 (Harness 12):
@@ -232,7 +210,6 @@ cables:
   
   J14 → EPS - J9 (Harness 15):
     wirecount: 4
-    length: 100 mm
     colors: [VT, BK, OG, YE]
   
   J12 → USB Serial Converter (Harness 51):
