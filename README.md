@@ -70,7 +70,7 @@ Running ```wireviz connectors.yaml``` in the terminal will update the output fil
 
     **Example: Harness 1 connection**
     
-    ```
+    ```yaml
     connections:
       -
         - OBC - J4: [1-4]
@@ -80,7 +80,7 @@ Running ```wireviz connectors.yaml``` in the terminal will update the output fil
     
     Note that we specify which pins are being used to make the connection. This can be done by providing a range      as in the above example or listing specific pins, such as in the harness 7 connection.
     
-    ```
+    ```yaml
     - OBC - J3: [3,4,7]
     - Harness 7 - GPS Connector: [3,4,7]
     - GPS: [3,4,7]
