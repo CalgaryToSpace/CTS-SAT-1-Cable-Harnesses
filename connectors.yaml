@@ -115,7 +115,7 @@ connectors:
 
   COTS 2U Solar Panel:
     type: Picoblade
-    pincount: 2
+    pincount: 4
   
   USB Serial Converter:
     type: N/A

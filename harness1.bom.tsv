@@ -1,0 +1,4 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 4 wires	200	mm	Harness 1 - MPI 12V Power
+2	Connector, Microlock, 4 pins	1		EPS - J10 VD3_OBC[0]
+3	Connector, Picoblade, 4 pins	1		OBC - J4
