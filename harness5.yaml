@@ -1,0 +1,22 @@
+connectors:
+
+    EPS - J2:
+        type: Microlock
+        pinlabels: [HEATERS_ON, VBAT_NEG, TH_R_BATT[1], TH_R_BATT[0], VBAT_NEG, VBAT_NEG, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_NEG, VBAT_NEG, VBAT_NEG, VBAT_NEG, N.C.]
+
+    Battery - J10 VD3_OBC[0]:
+        type: Microlock
+        pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
+
+cables:
+
+    Harness 1 - MPI 12V Power:
+        wirecount: 4
+        length: 200 mm
+        colors: [VT, BK, OG, YE]
+
+connections:
+-
+    - OBC - J4: [1-4]
+    - Harness 1 - MPI 12V Power: [1-4]
+    - EPS - J10 VD3_OBC[0]: [1-4]
