@@ -2,21 +2,32 @@ connectors:
 
     EPS - J2:
         type: Microlock
-        pinlabels: [HEATERS_ON, VBAT_NEG, TH_R_BATT[1], TH_R_BATT[0], VBAT_NEG, VBAT_NEG, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_NEG, VBAT_NEG, VBAT_NEG, VBAT_NEG, N.C.]
+        pinlabels: [HEATERS_ON, VBAT_NEG, TH_R_BATT(1), TH_R_BATT(0), VBAT_NEG, VBAT_NEG, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_NEG, VBAT_NEG, VBAT_NEG, VBAT_NEG, N.C.]
 
-    Battery - J10 VD3_OBC[0]:
-        type: Microlock
-        pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
+    EPS - PBP - 1:
+        type: TBD
+        pincount: 8
+    
+    EPS - PBP - 2:
+        type: TBD
+        pincount: 7
 
 cables:
 
-    Harness 1 - MPI 12V Power:
-        wirecount: 4
-        length: 200 mm
-        colors: [VT, BK, OG, YE]
+    Harness 5 - EPS - PBP - 1:
+        wirecount: 8
+        colors: [VT, BK, OG, YE, GN, BU, RD, PK]
+
+    Harness 5 - EPS - PBP - 2:
+        wirecount: 7
+        colors: [TQ, RD, BU, BG, SR, IV, OL]
 
 connections:
 -
-    - OBC - J4: [1-4]
-    - Harness 1 - MPI 12V Power: [1-4]
-    - EPS - J10 VD3_OBC[0]: [1-4]
+    - EPS - J2: [1-8]
+    - Harness 5 - EPS - PBP - 1: [1-8]
+    - EPS - PBP - 1: [1-8]
+-
+    - EPS - J2: [9-15]
+    - Harness 5 - EPS - PBP - 2: [1-7]
+    - EPS - PBP - 2: [1-7]
