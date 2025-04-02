@@ -37,7 +37,7 @@ CTS-SAT-1-Cable-Harnesses
 
 The ```inputs``` folder contains all of the code for this repository. The diagrams are located in the ```outputs``` folder as PNG images. They can also be exported as HTML, SVG, and TSV files.
 
-Running ```wireviz inputs/harness.yaml -f p -o outputs```, in the terminal will export the output as a PNG image, where ```harness.yaml```. Make sure to navigate to this repository's folder in your terminal first!
+Running ```wireviz inputs/harness.yaml -f p -o outputs``` in the terminal will export ```harness.yaml``` as a PNG image ```harness.png```. Make sure to navigate to this repository's folder in your terminal first!
 
 ## File Structure
 
