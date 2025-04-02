@@ -111,7 +111,7 @@ connectors:
   
   COTS 2U Solar Panel - PWR:
     type: Picoblade
-    pincount: 2
+    pincount: 4
 
   COTS 2U Solar Panel:
     type: Picoblade
@@ -270,9 +270,9 @@ connections:
     - Harness 8 - MPI Connector: [1-9]
     - MPI: [1-9]
   -
-    - OBC - J7: [1-6]
-    - Harness 9 - Camera Connector: [1-6]
-    - Camera: [1-6]
+    - OBC - J7: [1-4]
+    - Harness 9 - Camera Connector: [1-4]
+    - Camera: [1-4]
   -
     - OBC - J13: [1-9]
     - Harness 10 - Antenna Deployment Connector: [1-9]
