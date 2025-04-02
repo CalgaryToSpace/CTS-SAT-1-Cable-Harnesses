@@ -35,13 +35,13 @@ CTS-SAT-1-Cable-Harnesses
 └─ todo.txt
 ```
 
-The ```connectors.yaml``` file contains all of the code for this repository. The diagrams are outputted in ```connectors.png```, ```connectors.html```, and ```connectors.svg``` (any of these can be used for viewing the diagrams). 
+The ```inputs``` folder contains all of the code for this repository. The diagrams are located in the ```outputs``` folder as PNG images. They can also be exported as HTML, SVG, and TSV files.
 
-Running ```wireviz connectors.yaml``` in the terminal will update the output files after making changes to ```connectors.yaml```. Make sure to navigate to this repository's folder in your terminal first!
+Running ```wireviz inputs/harness.yaml -f p -o outputs```, in the terminal will export the output as a PNG image, where ```harness.yaml```. Make sure to navigate to this repository's folder in your terminal first!
 
 ## File Structure
 
-**```connectors.yaml``` has three different sections:**
+**```harness.yaml``` has three different sections:**
 
 1. In the **connectors** section, we define each connector. Currently, each connector is labelled with the connector type (e.g. Picoblade) and either the pin labels or the pin count. Ideally, these should be updated so that each connector has all of the pins labelled. Labelling the pins automatically also displays the pin count in the harness diagrams.
 
