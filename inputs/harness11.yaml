@@ -1,0 +1,24 @@
+connectors:
+
+  OBC - J18:
+      type: 50 OHM MCX
+      pincount: 1
+
+  AX100 - J4:
+      type: 50 OHM MCX
+      pincount: 1
+
+cables:
+
+  Harness 11 - RF Cable from AX100 to OBC:
+      wirecount: 1
+      shield: true
+
+connections:
+-
+  - OBC - J18: [1]
+  - Harness 11 - RF Cable from AX100 to OBC: [1]
+  - AX100 - J4: [1]
+- 
+  - OBC - J18: [1]
+  - Harness 11 - RF Cable from AX100 to OBC: s

@@ -1,0 +1,19 @@
+connectors:
+  EPS - J9:
+    type: Picoblade
+    pinlabels: [3V, SWCLK, GND, SWDIO, NRST, SWO]
+
+  Bench Power Supply:
+    type: 2.54mm Header
+    pincount: 6
+
+cables:
+
+  Harness 53 - Programmer Connector:
+    wirecount: 6
+
+connections:
+-
+    - OBC - J11: [1-6]
+    - Harness 52 - Programmer Connector: [1-6]
+    - ST-LINK: [1-6]

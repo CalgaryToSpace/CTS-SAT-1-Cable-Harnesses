@@ -1,0 +1,24 @@
+connectors:
+
+  OBC - J20:
+      type: 50 OHM MCX
+      pincount: 1
+
+  RF Antenna - J2:
+      type: 50 OHM MCX (Female)
+      pincount: 1
+
+cables:
+
+  Harness 12B - RF Cable from Antenna to OBC:
+      wirecount: 1
+      shield: true
+
+connections:
+-
+  - OBC - J20: [1]
+  - Harness 12B - RF Cable from Antenna to OBC: [1]
+  - RF Antenna - J2: [1]
+- 
+  - OBC - J20: [1]
+  - Harness 12B - RF Cable from Antenna to OBC: s
