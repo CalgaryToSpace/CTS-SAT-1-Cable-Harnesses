@@ -1,0 +1,16 @@
+connectors:
+
+    EPS - ABF:
+        type: MicroLock
+        pinlabels: [GND, GND, N_SEP_1, N_BAT_ENA_HS, N_SEP_2, N_SAT_ENA_HS, N_SEP_3, BAT_ENA_LS_POS, BAT_ENA_LS_RBF, BAT_EN_LS_NEG, GND, GND, N_abf_placed_1, GND]
+
+cables:
+
+    ABF Connector:
+        wirecount: 14
+
+connections:
+-
+    - EPS - ABF: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    - ABF Connector: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    - EPS - ABF: [2, 1, 4, 3, 6, 5, 8, 7, 9, 10, 12, 11, 14, 13]
