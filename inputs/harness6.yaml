@@ -1,0 +1,48 @@
+connectors:
+
+  Separation Switch - 1A:
+      type: Switch
+      pinlabels: [COM, NO, NC]
+
+  Separation Switch - 1B:
+      type: Switch
+      pinlabels: [COM, NO, NC]
+
+  Separation Switch - 2A:
+      type: Switch
+      pinlabels: [COM, NO, NC]
+
+  Separation Switch - 2B:
+      type: Switch
+      pinlabels: [COM, NO, NC]
+
+  EPS - J8:
+      type: 6-Wide Microlock
+      pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
+
+cables:
+
+  Harness 6 - Separation Switches:
+      wirecount: 6
+
+connections:
+-
+  - Separation Switch - 1A: [1, 3]
+  - Harness 6 - Separation Switches: [2, 1]
+  - EPS - J8: [2, 1]
+
+-
+  - Separation Switch - 1B: [1, 3]
+  - Harness 6 - Separation Switches: [2, 1]
+  - EPS - J8: [2, 1]
+
+-
+  - Separation Switch - 2A: [1, 3]
+  - Harness 6 - Separation Switches: [4, 3]
+  - EPS - J8: [4, 3]
+
+-
+  - Separation Switch - 2B: [1, 3]
+  - Harness 6 - Separation Switches: [4, 3]
+  - EPS - J8: [4, 3]
+
