@@ -1,0 +1,17 @@
+connectors:
+  Separation Switches:
+    pinlabels: [COM, NO, NC] 
+  
+  EPS - J8:
+      type: 6-Wide Microlock
+      pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
+
+cables:
+  Harness 54 - EPS Separation Switch Cable:
+    wirecount: 4
+
+connections:
+-
+  - Separation Switches: [1, 3]
+  - Harness 54 - EPS Separation Switch Cable: [2, 1]
+  - EPS - J8: [2, 1]
