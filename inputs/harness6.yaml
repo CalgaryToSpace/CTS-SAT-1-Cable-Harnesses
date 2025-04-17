@@ -23,7 +23,7 @@ connectors:
 cables:
 
   Harness 6 - Separation Switches:
-      wirecount: 6
+      wirecount: 8
 
 connections:
 -
@@ -33,16 +33,16 @@ connections:
 
 -
   - Separation Switch - 1B: [1, 3]
-  - Harness 6 - Separation Switches: [2, 1]
+  - Harness 6 - Separation Switches: [4, 3]
   - EPS - J8: [2, 1]
 
 -
   - Separation Switch - 2A: [1, 3]
-  - Harness 6 - Separation Switches: [4, 3]
+  - Harness 6 - Separation Switches: [6, 5]
   - EPS - J8: [4, 3]
 
 -
   - Separation Switch - 2B: [1, 3]
-  - Harness 6 - Separation Switches: [4, 3]
+  - Harness 6 - Separation Switches: [8, 7]
   - EPS - J8: [4, 3]
 
