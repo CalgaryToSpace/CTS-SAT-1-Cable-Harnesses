@@ -2,11 +2,12 @@ connectors:
 
     OBC - J10:
       type: Picoblade
-      pinlabels: [12V_MPI, 12V_MPI, GND, 5V, GND, MOSI, MOSI, MISO, MISO, NC]
+      pinlabels: [12V_MPI, 12V_MPI, GND, 5V, GND, MOSI_TX_P, MOSI_TX_N, MISO_RX_P, MISO_RX_N, NC]
 
     MPI Connector:
       type: 2.54mm Header
-      pinlabels: [12V_MPI, 12V_MPI, GND, 5V, GND, DO, DO, RI, RI, NC]
+      pins: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+      pinlabels: [12V_MPI, 12V_MPI, GND, 5V, GND, DO, DO*, RI, RI*, NC]
 
 
 cables:
@@ -19,4 +20,4 @@ connections:
 -
     - OBC - J10: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     - Harness 8 - MPI Connector: [1, 2, 3 , 4, 5, 6, 7, 8, 9]
-    - MPI Connector: [1, 2, 3, 4, 5, 8, 9, 6, 7]
+    - MPI Connector: [10, 9, 8, 7, 6, 3, 2, 5, 4]

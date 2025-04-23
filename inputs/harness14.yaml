@@ -1,11 +1,9 @@
 connectors:
 
-    OBC - J14:
-        type: Picoblade
-        pinlabels: [MISO_UART5_RX, MISO_UART5_TX, GND, GND]
+    OBC - J15:
+        pinlabels: [RBF_1, MISO_UART5_TX, GND, GND]
 
-    EPS - J9 Umbilical 2:
-        type: Microlock
+    P_RBF Connector:
         pinlabels: [RAIL_PWR, RAIL_PWR, RAIL_PWR, RAIL_PWR, GND, GND, GND, GND, GND, UART_RX_H2_21, UART_TX_H2_22, I2C_EXT_SCL, I2C_EXT_SDA, UART_TX_3V3_OUT1, UART_RX_3V3_IN1]
 
 cables:

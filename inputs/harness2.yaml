@@ -1,12 +1,13 @@
+INCOMPLETE:
 connectors:
 
     OBC - J4:
         type: Picoblade
         pinlabels: [12V_MPI, 12V_MPI, GND, GND]
 
-    EPS - J10 VD3_OBC[0]:
+    EPS - J10 VD3_OBC[1]:
         type: Microlock
-        pinlabels: [GND, GND, VD3_OBC(0), VD3_OBC(0)]
+        pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
 
 cables:
 
@@ -19,4 +20,4 @@ connections:
 -
     - OBC - J4: [1-4]
     - Harness 1 - MPI 12V Power: [1-4]
-    - EPS - J10 VD3_OBC[0]: [3, 4, 1, 2]
+    - EPS - J10 VD3_OBC[0]: [1-4]

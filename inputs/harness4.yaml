@@ -1,5 +1,9 @@
 connectors:
-  COTS Solar Panel PWR:
+  COTS Solar Panel PWR-1:
+    type: Picoblade 
+    pinlabels: [V+ (Solar Cell P junction), V- (GND)]
+
+  COTS Solar Panel PWR-2:
     type: Picoblade 
     pinlabels: [V+ (Solar Cell P junction), V- (GND)]
 
@@ -9,10 +13,15 @@ connectors:
 
 cables:
   Harness 4 - COTS Solar Panel PWR:
-    wirecount: 2
+    wirecount: 4
 
 connections:
 - 
-  - COTS Solar Panel PWR: [1-2]
+  - COTS Solar Panel PWR-1: [1-2]
   - Harness 4 - COTS Solar Panel PWR: [1-2]
   - EPS - J11_CH0, J11_CH1, J11_CH2, J303: [1,3]
+
+- 
+  - COTS Solar Panel PWR-2: [1-2]
+  - Harness 4 - COTS Solar Panel PWR: [3-4]
+  - EPS - J11_CH0, J11_CH1, J11_CH2, J303: [2,4]
