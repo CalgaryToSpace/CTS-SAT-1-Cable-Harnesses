@@ -1,0 +1,18 @@
+connectors:
+
+    OBC:
+        pinlabels: [MOSI_TX, MISO_RX, GND, GND]
+
+    AX100/DMC3:
+        pinlabels: [MOSI_RX, MISO_TX, NC, NC, NC, NC, NC, NC]
+
+cables:
+
+    Harness 17 - OBC to AX100/DMC3:
+        wirecount: 2
+
+connections:
+-
+    - OBC: [1-2]
+    - Harness 17 - OBC to AX100/DMC3: [1-2]
+    - AX100/DMC3: [1-2]
