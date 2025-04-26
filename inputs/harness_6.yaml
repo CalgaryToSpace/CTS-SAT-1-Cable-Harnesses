@@ -1,48 +1,42 @@
 connectors:
+  EPS - J8:
+    type: 6-Wide Microlock
+    pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
 
   Separation Switch - 1A:
-      type: D2F-L2-D3
-      pinlabels: [COM, N0, NC]
+    type: D2F-L2-D3
+    pinlabels: [COM, N0, NC] # N0 means "Normally Open". Can't use "NO" because it's a reserved word.
 
   Separation Switch - 1B:
-      type: D2F-L2-D3
-      pinlabels: [COM, N0, NC]
+    type: D2F-L2-D3
+    pinlabels: [COM, N0, NC]
 
   Separation Switch - 2A:
-      type: D2F-L2-D3
-      pinlabels: [COM, N0, NC]
+    type: D2F-L2-D3
+    pinlabels: [COM, N0, NC]
 
   Separation Switch - 2B:
-      type: D2F-L2-D3
-      pinlabels: [COM, N0, NC]
-
-  EPS - J8:
-      type: 6-Wide Microlock
-      pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
+    type: D2F-L2-D3
+    pinlabels: [COM, N0, NC]
 
 cables:
-
   Harness 6 - Separation Switches:
-      wirecount: 8
+    wirecount: 8
+    colors: [VT, BK, OG, YE, GN, BU, RD, WH] # Arbitrary colors for ease-of-reading.
 
 connections:
--
-  - Separation Switch - 1A: [1, 3]
-  - Harness 6 - Separation Switches: [2, 1]
-  - EPS - J8: [2, 1]
+  - - EPS - J8: [1, 2]
+    - Harness 6 - Separation Switches: [1, 2]
+    - Separation Switch - 1A: [1, 3]
 
--
-  - Separation Switch - 1B: [1, 3]
-  - Harness 6 - Separation Switches: [4, 3]
-  - EPS - J8: [2, 1]
+  - - EPS - J8: [1, 2]
+    - Harness 6 - Separation Switches: [3, 4]
+    - Separation Switch - 1B: [1, 3]
 
--
-  - Separation Switch - 2A: [1, 3]
-  - Harness 6 - Separation Switches: [4, 3]
-  - EPS - J8: [4, 3]
+  - - EPS - J8: [3, 4]
+    - Harness 6 - Separation Switches: [5, 6]
+    - Separation Switch - 2A: [1, 3]
 
--
-  - Separation Switch - 2B: [1, 3]
-  - Harness 6 - Separation Switches: [6, 5]
-  - EPS - J8: [4, 3]
-
+  - - EPS - J8: [3, 4]
+    - Harness 6 - Separation Switches: [7, 8]
+    - Separation Switch - 2B: [1, 3]
