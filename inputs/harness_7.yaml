@@ -1,20 +1,27 @@
 connectors:
-
   OBC - J3:
     type: Picoblade
-    pinlabels: [NC, NC, MOSI_USART3_TX, MISO_USART3_RX, GND, GND, GPS_PPS, GND]
-  
+    pinlabels: [NC, NC, MOSI_USART3_TX, MISO_USART3_RX, NC, NC, GPS_PPS, NC]
+
   GNSS - DMC3 P1:
     type: Picoblade
-    pinlabels: [NC, NC, UART1 RX, UART1 TX, AUX 1, AUX 2, AUX 3, AUX 4]
+    pinlabels:
+      [
+        NC,
+        NC,
+        UART1 RX (MISO),
+        UART1 TX (MOSI),
+        AUX 1,
+        AUX 2,
+        AUX 3 (PPS),
+        AUX 4,
+      ]
 
 cables:
-
   Harness 7 - GNSS Connector:
     wirecount: 8
 
 connections:
--
-    - OBC - J3: [3, 4, 5, 6, 7, 8]
-    - Harness 7 - GNSS Connector: [1-6]
-    - GNSS - DMC3 P1: [4, 3, 5, 6, 7, 8]
+  - - OBC - J3: [1, 2, 3, 4, 5, 6, 7, 8]
+    - Harness 7 - GNSS Connector: [1-8]
+    - GNSS - DMC3 P1: [1, 2, 4, 3, 5, 6, 7, 8]
