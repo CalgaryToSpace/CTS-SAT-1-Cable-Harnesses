@@ -4,21 +4,21 @@ connectors:
       type: SMA Male Right-Angle Connector
       pincount: 1
 
-  GPS Antenna:
+  GNSS Antenna:
       type: SMA Male Straight-Angle Connector
       pincount: 1
 
 cables:
 
-  Harness 13 - GPS Antenna Cable:
+  Harness 13 - GNSS Antenna Cable:
       wirecount: 1
       shield: true
 
 connections:
 -
   - GNSS - Receiver: [1]
-  - Harness 13 - GPS Antenna Cable: [1]
-  - GPS Antenna: [1]
+  - Harness 13 - GNSS Antenna Cable: [1]
+  - GNSS Antenna: [1]
 - 
   - GNSS - Receiver: [1]
-  - Harness 13 - GPS Antenna Cable: s
+  - Harness 13 - GNSS Antenna Cable: s

@@ -74,8 +74,8 @@ Online website for Wireviz: https://kroki.io/
     
     ```yaml
     - OBC - J3: [3,4,7]
-    - Harness 7 - GPS Connector: [3,4,7]
-    - GPS: [3,4,7]
+    - Harness 7 - GNSS Connector: [3,4,7]
+    - GNSS: [3,4,7]
     ```
 
 ## Further WireViz Syntax
