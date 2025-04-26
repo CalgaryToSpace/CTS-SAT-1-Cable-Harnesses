@@ -1,5 +1,4 @@
 connectors:
-
   OBC - J7:
     type: Picoblade
     pinlabels: [3V3_CAM, CAM_EN, MOSI_UART4_TX, MISO_UART4_RX, NC, GND]
@@ -7,7 +6,7 @@ connectors:
   Camera:
     type: Picoblade
     pinlabels: [VDD, "ON", RXD, TXD, FLASH, GND]
-  
+
 cables:
   Harness 9 - Camera Connector:
     wirecount: 6
@@ -15,7 +14,6 @@ cables:
     colors: [VT, BK, OG, YE, GN, BU]
 
 connections:
-  -
-    - OBC - J7: [1-4, 6]
-    - Harness 9 - Camera Connector: [1-4, 6]
-    - Camera: [1-4, 6]
+  - - OBC - J7: [1-6]
+    - Harness 9 - Camera Connector: [1-6]
+    - Camera: [1-6]
