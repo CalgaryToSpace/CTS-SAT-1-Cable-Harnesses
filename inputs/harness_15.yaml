@@ -1,8 +1,4 @@
 connectors:
-  OBC - J14:
-    type: Picoblade
-    pinlabels: [MISO_UART5_RX, MOSI_UART5_TX, GND, GND]
-
   EPS - J9 (Umbilical 2):
     type: Microlock
     pinlabels:
@@ -24,12 +20,16 @@ connectors:
         UART_RX_3V3_IN1,
       ]
 
+  OBC - J14:
+    type: Picoblade
+    pinlabels: [MISO_UART5_RX, MOSI_UART5_TX, GND, GND]
+
 cables:
   Harness 15 - EPS UART to OBC:
     wirecount: 4
-    colors: [VT, BK, OG, YE]
+    colors: [VT, OG, BK, BK]
 
 connections:
-  - - OBC - J14: [1-4]
+  - - EPS - J9 (Umbilical 2): [14, 15, 7, 8]
     - Harness 15 - EPS UART to OBC: [1-4]
-    - EPS - J9 (Umbilical 2): [14, 15, 7, 8]
+    - OBC - J14: [1-4]

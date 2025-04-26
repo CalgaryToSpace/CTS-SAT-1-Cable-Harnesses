@@ -1,16 +1,42 @@
 connectors:
-  EPS - J9:
-    pinlabels: [RAIL_PWR, RAIL_PWR, RAIL_PWR, RAIL_PWR, GND, GND, GND, GND, UART_RX_H2_21, UART_TX_H2_22, I2C_EXT_SCL, I2C_EXT_SDA, GND, UART_TX_3V3_OUT1, UART_TX_3V3_OUT1, UART_RX_3V3_IN1] 
+  EPS - J9 (Umbilical 2):
+    pinlabels:
+      [
+        RAIL_PWR,
+        RAIL_PWR,
+        RAIL_PWR,
+        RAIL_PWR,
+        GND,
+        GND,
+        GND,
+        GND,
+        UART_RX_H2_21,
+        UART_TX_H2_22,
+        I2C_EXT_SCL,
+        I2C_EXT_SDA,
+        GND,
+        UART_TX_3V3_OUT1,
+        UART_TX_3V3_OUT1,
+        UART_RX_3V3_IN1,
+      ]
 
   Bench Power Supply:
     pinlabels: [POSTIVE (+), GND (-), COM]
 
+  OBC - J14:
+    type: Picoblade
+    pinlabels: [MISO_UART5_RX, MOSI_UART5_TX, GND, GND]
+
 cables:
   Harness 53 - Umbilical Power Injection to EPS:
-    wirecount: 2
+    wirecount: 6
+    colors: [RD, BK, VT, OG, BK, BK]
 
 connections:
--
-    - EPS - J9: [1, 5]
+  - - EPS - J9 (Umbilical 2): [1, 5]
     - Harness 53 - Umbilical Power Injection to EPS: [1-2]
     - Bench Power Supply: [1, 2]
+
+  - - EPS - J9 (Umbilical 2): [14, 15, 7, 8]
+    - Harness 53 - Umbilical Power Injection to EPS: [3-6]
+    - OBC - J14: [1-4]
