@@ -1,16 +1,16 @@
 connectors:
-  OBC - J4:
+  OBC - J8:
     type: Picoblade
-    pinlabels: [BOOM_CTRL_1, GND, BOOM_CTRL_2, GND, GND, GND]
+    pinlabels: [BOOM_CTRL_1, GND, BOOM_CTRL_2, GND]
 
   Burnwire PCB - J1:
-    pinlabels: [GND, GND, BOOM_CTRL_1, GND, BOOM_CTRL_2]
+    pinlabels: [GND, GND, BOOM_CTRL_1, BOOM_CTRL_2]
 
 cables:
   Harness 3 - Boom Burn Wire to OBC:
-    wirecount: 5
+    wirecount: 4
 
 connections:
-  - - OBC - J4: [1-5]
-    - Harness 3 - Boom Burn Wire to OBC: [1-5]
-    - Burnwire PCB - J1: [3, 1, 5, 2, 4]
+  - - OBC - J8: [1-4]
+    - Harness 3 - Boom Burn Wire to OBC: [1-4]
+    - Burnwire PCB - J1: [3, 1, 4, 2]
