@@ -6,7 +6,8 @@ connectors:
 
     EPS - J10 VD3_OBC[0]:
         type: Microlock
-        pinlabels: [GND, GND, VD3_OBC(0), VD3_OBC(0)]
+        pins: [4, 3, 2, 1]
+        pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
 
 cables:
 
@@ -19,4 +20,4 @@ connections:
 -
     - OBC - J4: [1-4]
     - Harness 1 - MPI 12V Power: [1-4]
-    - EPS - J10 VD3_OBC[0]: [3, 4, 1, 2]
+    - EPS - J10 VD3_OBC[0]: [4, 3, 2, 1]
