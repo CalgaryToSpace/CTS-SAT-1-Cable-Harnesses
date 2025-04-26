@@ -1,0 +1,16 @@
+connectors:
+  EPS - J7:
+    pinlabels:
+      [VD3_OBC(1), VD3_OBC(1), GND, GND, GND, I2C_SCL, I2C, GND, I2C_SDA]
+
+  Burnwire PCB - J2:
+    pinlabels: [VDC, VDC, VDC, GND, GND, GND]
+
+cables:
+  Harness 2 - Boom Burnwire Power:
+    wirecount: 5
+
+connections:
+  - - EPS - J7: [1-5]
+    - Harness 2 - Boom Burnwire Power: [1-5]
+    - Burnwire PCB - J2: [1, 2, 4, 5, 6]
