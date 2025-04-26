@@ -1,18 +1,23 @@
 connectors:
+  OBC - J15:
+    pinlabels: [RBF_1, DEBUG_LED, GND, GND]
 
-    OBC - J15:
-        pinlabels: [RBF_1, NC, GND, GND]
+  P_RBF Connector on COTS Solar Panel:
+    pinlabels: [COM_RBF_1, NO_RBF_1, COM_RBF_2, NO_RBF_2]
 
-    P_RBF Connector:
-        pinlabels: [COM, N0]
+  LED Connector on In-House Solar Panel:
+    pinlabels: [DEBUG_LED, GND]
 
 cables:
-
-    Harness 14 - Solar Panel RBF Cable:
-        wirecount: 2
+  Harness 14 - Solar Panel RBF Cable:
+    wirecount: 4
+    colors: [VT, BK, OG, BK]
 
 connections:
--
-    - OBC - J15: [3, 1]
-    - Harness 14 - Solar Panel RBF Cable: [1,2]
-    - P_RBF Connector: [1-2]
+  - - OBC - J15: [1, 3]
+    - Harness 14 - Solar Panel RBF Cable: [1, 2]
+    - P_RBF Connector on COTS Solar Panel: [1-2]
+
+  - - OBC - J15: [2, 4]
+    - Harness 14 - Solar Panel RBF Cable: [3, 4]
+    - LED Connector on In-House Solar Panel: [1-2]
