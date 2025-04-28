@@ -1,5 +1,5 @@
 connectors:
-  EPS - J2:
+  EPS - J2 (Battery):
     type: Microlock
     pinlabels:
       [
@@ -17,30 +17,27 @@ connectors:
         VBAT_NEG,
         VBAT_NEG,
         VBAT_NEG,
-        N.C.,
+        NC,
       ]
 
-  EPS - PBP - 1:
-    type: TBD
+  EPS - PBP - Connector 1:
+    type: Picolock
     pincount: 8
 
-  EPS - PBP - 2:
-    type: TBD
+  EPS - PBP - Connector 2:
+    type: Picolock
     pincount: 7
 
 cables:
-  Harness 5 - EPS - PBP - 1:
-    wirecount: 8
-    colors: [VT, BK, OG, YE, GN, BU, RD, PK]
-
-  Harness 5 - EPS - PBP - 2:
-    wirecount: 7
-    colors: [TQ, RD, BU, BG, SR, IV, OL]
+  Harness 5 - EPS to PBP:
+    wirecount: 15
+    colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD, BU, BG, SR, IV, OL]
 
 connections:
-  - - EPS - J2: [1-8]
-    - Harness 5 - EPS - PBP - 1: [1-8]
-    - EPS - PBP - 1: [1-8]
-  - - EPS - J2: [9-15]
-    - Harness 5 - EPS - PBP - 2: [1-7]
-    - EPS - PBP - 2: [1-7]
+  - - EPS - J2 (Battery): [1-8]
+    - Harness 5 - EPS to PBP: [1-8]
+    - EPS - PBP - Connector 1: [1-8]
+
+  - - EPS - J2 (Battery): [9-15]
+    - Harness 5 - EPS to PBP: [9-15]
+    - EPS - PBP - Connector 2: [1-7]

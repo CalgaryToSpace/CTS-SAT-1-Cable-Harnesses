@@ -1,6 +1,6 @@
 connectors:
   EPS - J10 (Umbilical 1):
-    type: MicroLock
+    type: Microlock
     pinlabels: [
         GND, # Wire 1
         N_ABF_PLACED_0, # Wire 1
