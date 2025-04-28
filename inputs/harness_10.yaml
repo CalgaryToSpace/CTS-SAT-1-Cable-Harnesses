@@ -15,17 +15,17 @@ connectors:
         NC,
       ]
 
-  ANTS:
+  UHF Antenna:
     type: Omnetics A28000-009
     pinlabels: [VCC, SDA_A, GND, SDA_B, GND, VCC, SCL_A, SCL_B, GND]
 
 cables:
   Harness 10 - Antenna Deployment Connector:
-    wirecount: 10
+    wirecount: 9
     length: 250 mm
-    colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
+    colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ]
 
 connections:
   - - OBC - J13: [1-9]
     - Harness 10 - Antenna Deployment Connector: [1-9]
-    - ANTS: [1-9]
+    - UHF Antenna: [1-9]
