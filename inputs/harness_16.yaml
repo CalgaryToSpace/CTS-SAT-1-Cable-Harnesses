@@ -1,8 +1,7 @@
 connectors:
   EPS - J10 (Umbilical 1):
     type: MicroLock
-    pinlabels:
-      [
+    pinlabels: [
         GND, # Wire 1
         N_ABF_PLACED_0, # Wire 1
         N_SEPARATION_1, # Wire 2
@@ -48,7 +47,7 @@ connections:
     - Harness 16 - ABF Connector (Loopback/Pigtail): [4]
   - - EPS - J10 (Umbilical 1): [8]
     - Harness 16 - ABF Connector (Loopback/Pigtail): [4]
-  
+
   # Loopback N_ABF_PLACED_1 to GND
   - - EPS - J10 (Umbilical 1): [13]
     - Harness 16 - ABF Connector (Loopback/Pigtail): [5]

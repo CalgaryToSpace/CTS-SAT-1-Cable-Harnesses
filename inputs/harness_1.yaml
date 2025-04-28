@@ -1,23 +1,20 @@
 connectors:
+  OBC - J4:
+    type: Picoblade
+    pinlabels: [12V_MPI, 12V_MPI, GND, GND]
 
-    OBC - J4:
-        type: Picoblade
-        pinlabels: [12V_MPI, 12V_MPI, GND, GND]
-
-    EPS - J10 VD3_OBC[0]:
-        type: Microlock
-        pins: [4, 3, 2, 1]
-        pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
+  EPS - J10 VD3_OBC[0]:
+    type: Microlock
+    pins: [4, 3, 2, 1]
+    pinlabels: [VD3_OBC(0), VD3_OBC(0), GND, GND]
 
 cables:
-
-    Harness 1 - MPI 12V Power:
-        wirecount: 4
-        length: 200 mm
-        colors: [VT, BK, OG, YE]
+  Harness 1 - MPI 12V Power:
+    wirecount: 4
+    length: 200 mm
+    colors: [VT, BK, OG, YE]
 
 connections:
--
-    - OBC - J4: [1-4]
+  - - OBC - J4: [1-4]
     - Harness 1 - MPI 12V Power: [1-4]
     - EPS - J10 VD3_OBC[0]: [4, 3, 2, 1]

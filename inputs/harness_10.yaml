@@ -1,13 +1,24 @@
 connectors:
-
   OBC - J13:
     type: Picoblade
-    pinlabels: [3V3_ANT_DEPLOY, 12C2_SDA, GND, 12C3_SDA, GND, 3V3_ANT_DEPLOY, 12C2_SCL, 12C3_SCL, GND, NC]
+    pinlabels:
+      [
+        3V3_ANT_DEPLOY,
+        12C2_SDA,
+        GND,
+        12C3_SDA,
+        GND,
+        3V3_ANT_DEPLOY,
+        12C2_SCL,
+        12C3_SCL,
+        GND,
+        NC,
+      ]
 
   ANTS:
     type: Omnetics A28000-009
     pinlabels: [VCC, SDA_A, GND, SDA_B, GND, VCC, SCL_A, SCL_B, GND]
-  
+
 cables:
   Harness 10 - Antenna Deployment Connector:
     wirecount: 10
@@ -15,7 +26,6 @@ cables:
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
 
 connections:
-  -
-    - OBC - J13: [1-9]
+  - - OBC - J13: [1-9]
     - Harness 10 - Antenna Deployment Connector: [1-9]
     - ANTS: [1-9]

@@ -1,24 +1,20 @@
 connectors:
-
   OBC - J17:
-      type: 50 OHM MCX
-      pincount: 1
+    type: 50 OHM MCX
+    pincount: 1
 
   RF Antenna - J3:
-      type: 50 OHM MCX (Female)
-      pincount: 1
+    type: 50 OHM MCX (Female)
+    pincount: 1
 
 cables:
-
   Harness 12A - RF Cable from Antenna to OBC:
-      wirecount: 1
-      shield: true
+    wirecount: 1
+    shield: true
 
 connections:
--
-  - OBC - J17: [1]
-  - Harness 12A - RF Cable from Antenna to OBC: [1]
-  - RF Antenna - J3: [1]
-- 
-  - OBC - J17: [1]
-  - Harness 12A - RF Cable from Antenna to OBC: s
+  - - OBC - J17: [1]
+    - Harness 12A - RF Cable from Antenna to OBC: [1]
+    - RF Antenna - J3: [1]
+  - - OBC - J17: [1]
+    - Harness 12A - RF Cable from Antenna to OBC: s

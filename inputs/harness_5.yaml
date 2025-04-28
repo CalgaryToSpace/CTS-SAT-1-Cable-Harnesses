@@ -1,33 +1,46 @@
 connectors:
+  EPS - J2:
+    type: Microlock
+    pinlabels:
+      [
+        HEATERS_ON,
+        VBAT_NEG,
+        TH_R_BATT(1),
+        TH_R_BATT(0),
+        VBAT_NEG,
+        VBAT_NEG,
+        VBAT_POS,
+        VBAT_POS,
+        VBAT_POS,
+        VBAT_POS,
+        VBAT_NEG,
+        VBAT_NEG,
+        VBAT_NEG,
+        VBAT_NEG,
+        N.C.,
+      ]
 
-    EPS - J2:
-        type: Microlock
-        pinlabels: [HEATERS_ON, VBAT_NEG, TH_R_BATT(1), TH_R_BATT(0), VBAT_NEG, VBAT_NEG, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_POS, VBAT_NEG, VBAT_NEG, VBAT_NEG, VBAT_NEG, N.C.]
+  EPS - PBP - 1:
+    type: TBD
+    pincount: 8
 
-    EPS - PBP - 1:
-        type: TBD
-        pincount: 8
-    
-    EPS - PBP - 2:
-        type: TBD
-        pincount: 7
+  EPS - PBP - 2:
+    type: TBD
+    pincount: 7
 
 cables:
+  Harness 5 - EPS - PBP - 1:
+    wirecount: 8
+    colors: [VT, BK, OG, YE, GN, BU, RD, PK]
 
-    Harness 5 - EPS - PBP - 1:
-        wirecount: 8
-        colors: [VT, BK, OG, YE, GN, BU, RD, PK]
-
-    Harness 5 - EPS - PBP - 2:
-        wirecount: 7
-        colors: [TQ, RD, BU, BG, SR, IV, OL]
+  Harness 5 - EPS - PBP - 2:
+    wirecount: 7
+    colors: [TQ, RD, BU, BG, SR, IV, OL]
 
 connections:
--
-    - EPS - J2: [1-8]
+  - - EPS - J2: [1-8]
     - Harness 5 - EPS - PBP - 1: [1-8]
     - EPS - PBP - 1: [1-8]
--
-    - EPS - J2: [9-15]
+  - - EPS - J2: [9-15]
     - Harness 5 - EPS - PBP - 2: [1-7]
     - EPS - PBP - 2: [1-7]

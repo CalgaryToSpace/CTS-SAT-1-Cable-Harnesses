@@ -1,24 +1,20 @@
 connectors:
-
   GNSS - Receiver:
-      type: SMA Male Right-Angle Connector
-      pincount: 1
+    type: SMA Male Right-Angle Connector
+    pincount: 1
 
   GNSS Antenna:
-      type: SMA Male Straight-Angle Connector
-      pincount: 1
+    type: SMA Male Straight-Angle Connector
+    pincount: 1
 
 cables:
-
   Harness 13 - GNSS Antenna Cable:
-      wirecount: 1
-      shield: true
+    wirecount: 1
+    shield: true
 
 connections:
--
-  - GNSS - Receiver: [1]
-  - Harness 13 - GNSS Antenna Cable: [1]
-  - GNSS Antenna: [1]
-- 
-  - GNSS - Receiver: [1]
-  - Harness 13 - GNSS Antenna Cable: s
+  - - GNSS - Receiver: [1]
+    - Harness 13 - GNSS Antenna Cable: [1]
+    - GNSS Antenna: [1]
+  - - GNSS - Receiver: [1]
+    - Harness 13 - GNSS Antenna Cable: s

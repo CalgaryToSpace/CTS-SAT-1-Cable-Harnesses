@@ -1,20 +1,17 @@
 connectors:
+  OBC - J12:
+    type: Picoblade
+    pinlabels:
+      [V_BAT, GND, MISO_LPUART1_RX, MOSI_LPUART_TX, GND, 3V3, 5V, GND, GND, GND]
 
-    OBC - J12:
-        type: Picoblade
-        pinlabels: [V_BAT, GND, MISO_LPUART1_RX, MOSI_LPUART_TX, GND, 3V3, 5V, GND, GND, GND]
-
-    USB-to-UART:
-        pinlabels: [MOSI_TX, MISO_RX, GND, 5V, 3V3]
+  USB-to-UART:
+    pinlabels: [MOSI_TX, MISO_RX, GND, 5V, 3V3]
 
 cables:
-
-    Harness 51 - Umbilical:
-        wirecount: 5
-        
+  Harness 51 - Umbilical:
+    wirecount: 5
 
 connections:
--
-    - OBC - J12: [3, 4 , 5, 6, 7]
+  - - OBC - J12: [3, 4, 5, 6, 7]
     - Harness 51 - Umbilical: [1-5]
-    - USB-to-UART: [1, 2, 3, 4, 5] 
+    - USB-to-UART: [1, 2, 3, 4, 5]
