@@ -1,9 +1,0 @@
-FOR DEBUGGING PURPOSES
-
-1. Harness 4: missing PWR1, PWR2 pins - done
-2. Missing harness 5 - done
-3. Missing harness 6 - done
-4. Missing harness 11 - done
-5. Missing harness 12 - done
-6. Missing harness 54 - done
-7. Missing harness 55 - done
