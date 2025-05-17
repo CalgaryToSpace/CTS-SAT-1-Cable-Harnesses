@@ -1,20 +1,22 @@
 connectors:
-  OBC - J18:
-    type: 50 OHM MCX
+  OBC - J18 (COMS):
+    type: MCX Male - Right Angle
     pincount: 1
 
   AX100 - J4:
-    type: 50 OHM MCX
+    type: MCX Male - Right Angle
     pincount: 1
 
 cables:
   Harness 11 - RF Cable from AX100 to OBC:
     wirecount: 1
     shield: true
+    length: 150mm
+    type: RG-316
 
 connections:
-  - - OBC - J18: [1]
+  - - OBC - J18 (COMS): [1]
     - Harness 11 - RF Cable from AX100 to OBC: [1]
     - AX100 - J4: [1]
-  - - OBC - J18: [1]
+  - - OBC - J18 (COMS): [1]
     - Harness 11 - RF Cable from AX100 to OBC: s

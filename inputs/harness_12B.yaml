@@ -1,10 +1,10 @@
 connectors:
-  OBC - J20:
-    type: 50 OHM MCX
+  OBC - J17 (ANT2):
+    type: MCX Male - Right Angle
     pincount: 1
 
-  RF Antenna - J2:
-    type: 50 OHM MCX (Female)
+  RF Antenna - J3:
+    type: SSMCX Male - Right Angle
     pincount: 1
 
 cables:
@@ -13,8 +13,8 @@ cables:
     shield: true
 
 connections:
-  - - OBC - J20: [1]
+  - - OBC - J17 (ANT2): [1]
     - Harness 12B - RF Cable from Antenna to OBC: [1]
-    - RF Antenna - J2: [1]
-  - - OBC - J20: [1]
+    - RF Antenna - J3: [1]
+  - - OBC - J17: [1]
     - Harness 12B - RF Cable from Antenna to OBC: s

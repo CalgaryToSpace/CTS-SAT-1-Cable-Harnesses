@@ -1,6 +1,6 @@
 connectors:
   GNSS - Receiver:
-    type: SMA Male Right-Angle Connector
+    type: MCX Male - Right Angle
     pincount: 1
 
   GNSS Antenna:
