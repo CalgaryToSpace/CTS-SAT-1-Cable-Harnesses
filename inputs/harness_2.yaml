@@ -2,7 +2,7 @@ connectors:
   Burnwire PCB - J2:
     pinlabels: [VDC, VDC, VDC, GND, GND, GND]
 
-  EPS - J7:
+  VD3_OBC[1]:
     pinlabels: [VD3_OBC(1), VD3_OBC(1), GND, GND, GND, I2C_SCL, GND, I2C_SDA]
 
 cables:
@@ -12,4 +12,4 @@ cables:
 connections:
   - - Burnwire PCB - J2: [1, 2, 4, 5, 6]
     - Harness 2 - Boom Burnwire Power: [1-5]
-    - EPS - J7: [1, 2, 3, 5, 7]
+    - VD3_OBC[1]: [1, 2, 3, 5, 7]
