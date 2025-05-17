@@ -8,6 +8,7 @@ connectors:
 cables:
   Harness 2 - Boom Burnwire Power:
     wirecount: 5
+    length: 300 mm
 
 connections:
   - - Burnwire PCB - J2: [1, 2, 4, 5, 6]

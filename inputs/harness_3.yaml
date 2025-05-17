@@ -9,6 +9,7 @@ connectors:
 cables:
   Harness 3 - Boom Burn Wire to OBC:
     wirecount: 4
+    length: 300 mm
 
 connections:
   - - OBC - J8 (BW): [1-4]
