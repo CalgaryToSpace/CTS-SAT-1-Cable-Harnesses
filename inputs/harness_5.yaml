@@ -41,3 +41,5 @@ connections:
   - - EPS - J2 (Battery): [9-15]
     - Harness 5 - EPS to PBP: [9-15]
     - EPS - PBP - Connector 2: [1-7]
+
+# FIXME: Note that the FM harness does not have all pins connected like this.

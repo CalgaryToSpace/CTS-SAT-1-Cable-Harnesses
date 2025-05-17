@@ -16,5 +16,5 @@ connections:
   - - OBC - J17 (ANT2): [1]
     - Harness 12B - RF Cable from Antenna to OBC: [1]
     - RF Antenna - J3: [1]
-  - - OBC - J17: [1]
+  - - OBC - J17 (ANT2): [1]
     - Harness 12B - RF Cable from Antenna to OBC: s

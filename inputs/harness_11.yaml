@@ -11,7 +11,7 @@ cables:
   Harness 11 - RF Cable from AX100 to OBC:
     wirecount: 1
     shield: true
-    length: 150mm
+    length: 150 mm
     type: RG-316
 
 connections:

@@ -1,5 +1,5 @@
 connectors:
-  OBC - J10:
+  OBC - J10 (MPI):
     type: Picoblade
     pinlabels:
       [
@@ -22,10 +22,10 @@ connectors:
 
 cables:
   Harness 8 - MPI Connector:
-    wirecount: 10
-    colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD]
+    wirecount: 9
+    colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ]
 
 connections:
-  - - OBC - J10: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  - - OBC - J10 (MPI): [1, 2, 3, 4, 5, 6, 7, 8, 9]
     - Harness 8 - MPI Connector: [1, 2, 3, 4, 5, 6, 7, 8, 9]
     - MPI Connector: [10, 9, 8, 7, 6, 3, 2, 5, 4]

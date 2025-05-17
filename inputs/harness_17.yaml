@@ -1,5 +1,5 @@
 connectors:
-  OBC:
+  OBC - J9 ("UART"):
     pinlabels: [MOSI_TX, MISO_RX, GND, GND]
 
   AX100 via DMC3 P2:
@@ -10,6 +10,6 @@ cables:
     wirecount: 2
 
 connections:
-  - - OBC: [1-2]
+  - - OBC - J9 ("UART"): [1-2]
     - Harness 17 - OBC to AX100/DMC3: [1-2]
     - AX100 via DMC3 P2: [1-2]

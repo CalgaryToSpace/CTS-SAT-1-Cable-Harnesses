@@ -1,5 +1,5 @@
 connectors:
-  OBC - J4:
+  OBC - J4 (MPI Power):
     type: Picoblade
     pinlabels: [12V_MPI, 12V_MPI, GND, GND]
 
@@ -15,6 +15,6 @@ cables:
     colors: [VT, BK, OG, YE]
 
 connections:
-  - - OBC - J4: [1-4]
+  - - OBC - J4 (MPI Power): [1-4]
     - Harness 1 - MPI 12V Power: [1-4]
     - EPS - J10 VD3_OBC[0]: [4, 3, 2, 1]

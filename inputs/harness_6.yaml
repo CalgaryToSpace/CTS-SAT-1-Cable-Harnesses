@@ -40,3 +40,5 @@ connections:
   - - EPS - J8 SEP_SW: [3, 4]
     - Harness 6 - Separation Switches: [7, 8]
     - Separation Switch - 2B: [1, 3]
+
+# FIXME: Need to show the chaining better

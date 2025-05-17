@@ -1,5 +1,5 @@
 connectors:
-  OBC - J13:
+  OBC - J13 (Antenna):
     type: Picoblade
     pinlabels:
       [
@@ -26,6 +26,6 @@ cables:
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ]
 
 connections:
-  - - OBC - J13: [1-9]
+  - - OBC - J13 (Antenna): [1-9]
     - Harness 10 - Antenna Deployment Connector: [1-9]
     - UHF Antenna: [1-9]
