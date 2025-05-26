@@ -1,0 +1,45 @@
+connectors:
+  1p25U In-House Solar Panel 1 - Power:
+    type: Picoblade
+    pinlabels: [V+, V+, V-, V-, V+, V+, V-, V-]
+
+  1p25U In-House Solar Panel 2 - Power:
+    type: Picoblade
+    pinlabels: [V+, V+, V-, V-, V+, V+, V-, V-]
+
+  1p0U In-House Solar Panel - Power:
+    type: Picoblade
+    pinlabels: [V+, V+, V-, V-, V+, V+, V-, V-]
+
+  EPS - J11_CH0:
+    type: Picolock
+    pinlabels: [SP+, SP+, GND, GND, SP+, SP+, GND, GND]
+
+cables:
+  Harness 18 - In-House Solar Panel Power (Group 1, Spliced):
+    wirecount: 4
+    colors: [RD, RD, BK, BK]
+
+  Harness 18 - In-House Solar Panel Power (Group 2, Spliced):
+    wirecount: 4
+    colors: [RD, RD, BK, BK]
+
+  Harness 18 - In-House Solar Panel Power (Group 3, Precrimped):
+    wirecount: 4
+    colors: [RD, RD, BK, BK]
+
+# All three panels in parallel (because their ground planes are grounded).
+# Chain the 1.0U to a 1.25U panel for easier assembly.
+
+connections:
+  - - EPS - J11_CH0: [1-4]
+    - Harness 18 - In-House Solar Panel Power (Group 1, Spliced): [1-4]
+    - 1p25U In-House Solar Panel 1 - Power: [1, 2, 7, 8] # Spread out for easier plug removal.
+
+  - - EPS - J11_CH0: [5-8]
+    - Harness 18 - In-House Solar Panel Power (Group 2, Spliced): [1-4]
+    - 1p25U In-House Solar Panel 2 - Power: [5-8]
+
+  - - 1p25U In-House Solar Panel 2 - Power: [1-4]
+    - Harness 18 - In-House Solar Panel Power (Group 3, Precrimped): [1-4]
+    - 1p0U In-House Solar Panel - Power: [1, 2, 7, 8] # Spread out for easier plug removal.
