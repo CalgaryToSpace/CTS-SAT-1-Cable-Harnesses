@@ -23,7 +23,18 @@ cables:
   Harness 10 - Antenna Deployment Connector:
     wirecount: 9
     length: 250 mm
-    colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ]
+    # Note: Colors align with the Omnetics wire colors.
+    colors: [
+        BK, # Black
+        BN, # Brown
+        RD, # Red
+        OG, # Orange
+        YE, # Yellow
+        GN, # Green
+        BU, # Blue
+        VT, # Violet
+        GY, # Gray
+      ]
 
 connections:
   - - OBC - J13 (Antenna): [1-9]
