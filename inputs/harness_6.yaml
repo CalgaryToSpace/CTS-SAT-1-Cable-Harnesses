@@ -1,6 +1,6 @@
 connectors:
   EPS - J8 SEP_SW:
-    type: 6-Wide Microlock
+    type: Microlock
     pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
 
   Separation Switch - 1A:

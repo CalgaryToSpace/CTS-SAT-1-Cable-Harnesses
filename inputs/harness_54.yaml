@@ -3,7 +3,7 @@ connectors:
     pinlabels: [COM, NO, NC]
 
   EPS - J8:
-    type: 6-Wide Microlock
+    type: Microlock
     pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
 
 cables:

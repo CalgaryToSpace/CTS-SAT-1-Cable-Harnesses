@@ -1,8 +1,10 @@
 connectors:
   Burnwire PCB - J2:
+    type: Picoblade
     pinlabels: [VDC, VDC, VDC, GND, GND, GND]
 
   EPS - VD3_OBC[1]:
+    type: Picolock
     pinlabels: [VD3_OBC(1), VD3_OBC(1), GND, GND, GND, I2C_SCL, GND, I2C_SDA]
 
 cables:

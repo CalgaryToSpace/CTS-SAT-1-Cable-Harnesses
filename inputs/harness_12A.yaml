@@ -4,7 +4,7 @@ connectors:
     pincount: 1
 
   RF Antenna - J2:
-    type: SSMCX Male - Right Angle
+    type: MMCX Male - Right Angle
     pincount: 1
 
 cables:

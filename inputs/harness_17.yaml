@@ -1,8 +1,10 @@
 connectors:
   OBC - J9 ("UART"):
+    type: Picoblade
     pinlabels: [MOSI_TX, MISO_RX, GND, GND]
 
   AX100 via DMC3 P2:
+    type: Picoblade
     pinlabels: [MOSI_RX, MISO_TX, NC, NC, NC, NC, NC, NC]
 
 cables:

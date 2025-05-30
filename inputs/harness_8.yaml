@@ -16,7 +16,7 @@ connectors:
       ]
 
   MPI Connector:
-    type: 2.54mm Header
+    type: Picoblade
     pins: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
     pinlabels: [12V_MPI, 12V_MPI, GND, 5V, GND, DO, DO*, RI, RI*, NC]
 

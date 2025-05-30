@@ -4,6 +4,7 @@ connectors:
     pinlabels: [BOOM_CTRL_1, GND, BOOM_CTRL_2, GND]
 
   Burnwire PCB - J1:
+    type: Picoblade
     pinlabels: [GND, GND, BOOM_CTRL_1, BOOM_CTRL_2]
 
 cables:
