@@ -58,6 +58,7 @@ cables:
     wirecount: 8
     length: 300 mm
     colors: [RD, BK, OG, YE, GN, BU, VT, PK, TQ]
+    notes: See Harness 15 for other EPS Umbilical 2 connections (UART).
 
 connections:
   - - Outside Umbilical Port (8-Pin): [1]

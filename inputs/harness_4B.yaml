@@ -14,6 +14,7 @@ connectors:
 cables:
   Harness 4B - COTS Solar Panel Power:
     wirecount: 4
+    length: 300 mm
 
 connections:
   - - COTS Solar Panel PWR-1: [1-2]

@@ -8,13 +8,14 @@ connectors:
     pincount: 1
 
 cables:
-  Harness 12A - RF Cable from Antenna to OBC:
+  Harness 12A - RF Cable from Antenna to OBC (ANT1):
     wirecount: 1
+    length: 410 mm
     shield: true
 
 connections:
   - - OBC - J20 (ANT1): [1]
-    - Harness 12A - RF Cable from Antenna to OBC: [1]
+    - Harness 12A - RF Cable from Antenna to OBC (ANT1): [1]
     - RF Antenna - J2: [1]
   - - OBC - J20 (ANT1): [1]
-    - Harness 12A - RF Cable from Antenna to OBC: s
+    - Harness 12A - RF Cable from Antenna to OBC (ANT1): s

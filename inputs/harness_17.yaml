@@ -10,6 +10,7 @@ connectors:
 cables:
   Harness 17 - OBC to AX100/DMC3:
     wirecount: 2
+    length: 150 mm
 
 connections:
   - - OBC - J9 ("UART"): [1-2]

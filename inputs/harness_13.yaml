@@ -10,6 +10,7 @@ connectors:
 cables:
   Harness 13 - GNSS Antenna Cable:
     wirecount: 1
+    length: 300 mm
     shield: true
 
 connections:

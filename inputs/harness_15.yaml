@@ -27,7 +27,9 @@ connectors:
 cables:
   Harness 15 - EPS UART to OBC:
     wirecount: 4
+    length: 150 mm
     colors: [VT, OG, BK, BK]
+    notes: See Harness 19 for other EPS Umbilical 2 connection (RAIL_PWR to external umbilical).
 
 connections:
   - - EPS - J9 (Umbilical 2): [14, 15, 7, 8]

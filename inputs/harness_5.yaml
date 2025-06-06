@@ -31,6 +31,7 @@ connectors:
 cables:
   Harness 5 - EPS to PBP:
     wirecount: 15
+    length: 45 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ, RD, BU, BG, SR, IV, OL]
 
 connections:

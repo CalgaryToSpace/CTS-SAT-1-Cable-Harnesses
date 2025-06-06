@@ -23,6 +23,7 @@ connectors:
 cables:
   Harness 8 - MPI Connector:
     wirecount: 9
+    length: 300 mm
     colors: [VT, BK, OG, YE, GN, BU, RD, PK, TQ]
 
 connections:

@@ -8,6 +8,7 @@ connectors:
 cables:
   Harness 14 - Solar Panel RBF:
     wirecount: 4
+    length: 300 mm
     colors: [VT, OG, BK, BK]
 
 connections:

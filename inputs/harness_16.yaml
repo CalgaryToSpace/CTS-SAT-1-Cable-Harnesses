@@ -21,6 +21,7 @@ connectors:
 cables:
   Harness 16 - ABF Connector (Loopback/Pigtail):
     wirecount: 5
+    # Length: As short as possible, 150mm wires looped back.
     colors: [RD, BK, VT, OG, BK]
 
 connections:

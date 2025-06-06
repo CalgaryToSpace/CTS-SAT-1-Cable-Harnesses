@@ -18,14 +18,17 @@ connectors:
 cables:
   Harness 18 - In-House Solar Panel Power (Group 1, Spliced):
     wirecount: 4
+    length: 300 mm
     colors: [RD, RD, BK, BK]
 
   Harness 18 - In-House Solar Panel Power (Group 2, Spliced):
     wirecount: 4
+    length: 300 mm
     colors: [RD, RD, BK, BK]
 
   Harness 18 - In-House Solar Panel Power (Group 3, Precrimped):
     wirecount: 4
+    length: 150 mm
     colors: [RD, RD, BK, BK]
 
 # All three panels in parallel (because their ground planes are grounded).
