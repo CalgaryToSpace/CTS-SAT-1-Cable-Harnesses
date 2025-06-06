@@ -1,0 +1,19 @@
+connectors:
+  Outside OBC Programming Port (6-Pin):
+    type: Picoblade (Male - mates with "normal" harness)
+    pinlabels: [3V3, SWCLK, GND, SWDIO, NRST, SWO]
+
+  OBC - J11 (SWD):
+    type: Picoblade
+    pinlabels: [3V3, SWCLK, GND, SWDIO, NRST, SWO]
+
+cables:
+  Harness 20 - OBC Programming Extension to Outside:
+    wirecount: 6
+    length: 150 mm
+    colors: [RD, TQ, BK, OG, YE, GN]
+
+connections:
+  - - Outside OBC Programming Port (6-Pin): [1-6]
+    - Harness 20 - OBC Programming Extension to Outside: [1-6]
+    - OBC - J11 (SWD): [1-6]

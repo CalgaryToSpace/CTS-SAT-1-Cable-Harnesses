@@ -1,0 +1,73 @@
+connectors:
+  Outside Umbilical Port (8-Pin):
+    type: Picoblade (Male - mates with "normal" harness)
+    pinlabels:
+      [
+        RAIL_PWR,
+        GND,
+        OBC_DEBUG_UART (To OBC),
+        OBC_DEBUG_UART (From OBC),
+        GND,
+        3V3,
+        AX100_DEBUG_UART (To AX100),
+        AX100_DEBUG_UART (From AX100),
+      ]
+
+  EPS - J9 (Umbilical 2):
+    type: Microlock
+    pinlabels:
+      [
+        RAIL_PWR,
+        RAIL_PWR,
+        RAIL_PWR,
+        RAIL_PWR,
+        GND,
+        GND,
+        GND (See Harness 15),
+        GND (See Harness 15),
+        UART_RX_H2_21,
+        UART_TX_H2_22,
+        I2C_EXT_SCL,
+        I2C_EXT_SDA,
+        GND,
+        UART_TX_3V3_OUT1 (See Harness 15),
+        UART_RX_3V3_IN1 (See Harness 15),
+      ]
+
+  AX100 Debug UART Connector:
+    type: Picoblade
+    pinlabels:
+      [GND, 3V3, AX100_DEBUG_UART (To AX100), AX100_DEBUG_UART (From AX100)]
+
+  OBC - J12 (Umbilical):
+    type: Picoblade
+    pinlabels:
+      [
+        V_BAT,
+        GND,
+        OBC_DEBUG_UART (To OBC),
+        OBC_DEBUG_UART (From OBC),
+        GND,
+        3V3,
+        5V,
+        GND,
+      ]
+
+cables:
+  Harness 19 - Umbilical Extension to Outside:
+    wirecount: 8
+    length: 300 mm
+    colors: [RD, BK, OG, YE, GN, BU, VT, PK, TQ]
+
+connections:
+  - - Outside Umbilical Port (8-Pin): [1]
+    - Harness 19 - Umbilical Extension to Outside: [1]
+    - EPS - J9 (Umbilical 2): [1]
+
+  - - Outside Umbilical Port (8-Pin): [2, 3, 4, 5, 6]
+    - Harness 19 - Umbilical Extension to Outside: [2, 3, 4, 5, 6]
+    - OBC - J12 (Umbilical): [2, 3, 4, 5, 6]
+
+  - - Outside Umbilical Port (8-Pin): [7, 8]
+    - Harness 19 - Umbilical Extension to Outside: [7, 8]
+    - AX100 Debug UART Connector: [3, 4]
