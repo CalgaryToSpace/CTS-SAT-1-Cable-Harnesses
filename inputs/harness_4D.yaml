@@ -1,9 +1,9 @@
 connectors:
-  COTS Solar Panel PWR-1:
+  COTS Solar Panel (Stack Header Face) PWR-1:
     type: Picoblade
     pinlabels: [V+ (Solar Cell P junction), V- (GND)]
 
-  COTS Solar Panel PWR-2:
+  COTS Solar Panel (Stack Header Face) PWR-2:
     type: Picoblade
     pinlabels: [V+ (Solar Cell P junction), V- (GND)]
 
@@ -17,10 +17,10 @@ cables:
     length: 300 mm
 
 connections:
-  - - COTS Solar Panel PWR-1: [1-2]
+  - - COTS Solar Panel (Stack Header Face) PWR-1: [1-2]
     - Harness 4D - COTS Solar Panel Power: [1-2]
     - EPS - J403: [2, 3]
 
-  - - COTS Solar Panel PWR-2: [1-2]
+  - - COTS Solar Panel (Stack Header Face) PWR-2: [1-2]
     - Harness 4D - COTS Solar Panel Power: [3-4]
     - EPS - J403: [6, 7]

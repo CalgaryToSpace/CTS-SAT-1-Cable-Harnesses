@@ -3,7 +3,7 @@ connectors:
     type: Microlock
     pinlabels:
       [
-        RAIL_PWR,
+        RAIL_PWR (See Harness 15),
         RAIL_PWR,
         RAIL_PWR,
         RAIL_PWR,

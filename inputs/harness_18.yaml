@@ -14,6 +14,7 @@ connectors:
   EPS - J11_CH0:
     type: Picolock
     pinlabels: [SP+, SP+, GND, GND, SP+, SP+, GND, GND]
+    notes: "This connector is on the face 'opposite stack header'."
 
 cables:
   Harness 18 - In-House Solar Panel Power (Group 1, Spliced):
@@ -28,7 +29,7 @@ cables:
 
   Harness 18 - In-House Solar Panel Power (Group 3, Precrimped):
     wirecount: 4
-    length: 150 mm
+    length: 300 mm # Must be longer than it seems.
     colors: [RD, RD, BK, BK]
 
 # All three panels in parallel (because their ground planes are grounded).

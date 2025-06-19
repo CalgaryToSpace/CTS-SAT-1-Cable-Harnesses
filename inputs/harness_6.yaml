@@ -1,23 +1,34 @@
 connectors:
   EPS - J8 SEP_SW:
     type: Microlock
-    pinlabels: [NSEP1, GND, NSEP2, GND, NSEP3, Nseparation_bat_LS_NEG]
+    pinlabels: [
+        NSEP1_SAT_PWR,
+        GND,
+        NSEP2_BAT_HIGH_SIDE,
+        GND,
+        NSEP3_BAT_LOW_SIDE, # Sep 3 not used on CTS-SAT-1.
+        GND,
+      ]
 
   Separation Switch - 1A:
     type: D2F-L2-D3
     pinlabels: [COM, N0, NC] # N0 means "Normally Open". Can't use "NO" because it's a reserved word.
+    notes: "On Zenith side panel"
 
   Separation Switch - 1B:
     type: D2F-L2-D3
     pinlabels: [COM, N0, NC]
+    notes: "On Zenith side panel"
 
   Separation Switch - 2A:
     type: D2F-L2-D3
     pinlabels: [COM, N0, NC]
+    notes: "On Nadir side panel"
 
   Separation Switch - 2B:
     type: D2F-L2-D3
     pinlabels: [COM, N0, NC]
+    notes: "On Nadir side panel"
 
 cables:
   Harness 6 - Separation Switches:
